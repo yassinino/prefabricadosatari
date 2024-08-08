@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+    <title>Montajes</title>
+    <meta
+        name="description"
+        content="Example of an ecommerce storefront built with Lunar."
+    >
+    <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap.min.css') }}"><!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{{ url('css/fontawesome/css/font-awesome.min.css') }}"><!-- FONTAWESOME STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{{ url('css/flaticon.min.css') }}"><!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{{ url('css/animate.min.css') }}"><!-- ANIMATE STYLE SHEET --> 
+    <link rel="stylesheet" type="text/css" href="{{ url('css/owl.carousel.min.css') }}"><!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap-select.min.css') }}"><!-- BOOTSTRAP SELECT BOX STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{{ url('css/magnific-popup.min.css') }}"><!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{{ url('css/loader.min.css') }}"><!-- LOADER STYLE SHEET -->   
+    <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}"><!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" class="skin" href="{{ url('css/skin/skin-5.css') }}"><!-- THEME COLOR CHANGE STYLE SHEET -->
+    <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url('plugins/revolution/revolution/css/settings.css') }}">
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link rel="stylesheet" type="text/css" href="{{ url('plugins/revolution/revolution/css/navigation.css') }}">
+    
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800italic,800,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+    
+    <link
+        rel="icon"
+        href="{{ asset('favicon.svg') }}"
+    >
+    @livewireStyles
+    @stripeScripts
+</head>
+
+<body id="bg">
+
+    <div class="page-wraper"> 
+        @livewire('components.navigation')
+
+        <main>
+            {{ $slot }}
+        </main>
+
+        <x-footer />
+
+        @livewireScripts
+    </div>
+
+    <!-- JAVASCRIPT  FILES ========================================= --> 
+<script   src="{{ url('js/jquery-3.6.1.min.js') }}"></script><!-- JQUERY.MIN JS -->
+<script   src="{{ url('js/popper.min.js') }}"></script><!-- POPPER.MIN JS -->
+<script   src="{{ url('js/bootstrap.min.js') }}"></script><!-- BOOTSTRAP.MIN JS -->
+<script   src="{{ url('js/bootstrap-select.min.js') }}"></script><!-- FORM JS -->
+<script   src="{{ url('js/jquery.bootstrap-touchspin.min.js') }}"></script><!-- FORM JS -->
+<script   src="{{ url('js/magnific-popup.min.js') }}"></script><!-- MAGNIFIC-POPUP JS -->
+<script   src="{{ url('js/waypoints.min.js') }}"></script><!-- WAYPOINTS JS -->
+<script   src="{{ url('js/counterup.min.js') }}"></script><!-- COUNTERUP JS -->
+<script   src="{{ url('js/waypoints-sticky.min.js') }}"></script><!-- COUNTERUP JS -->
+<script   src="{{ url('js/isotope.pkgd.min.js') }}"></script><!-- MASONRY  -->
+<script   src="{{ url('js/imagesloaded.pkgd.min.js') }}"></script><!-- MASONRY  -->
+<script   src="{{ url('js/owl.carousel.min.js') }}"></script><!-- OWL  SLIDER  -->
+<script   src="{{ url('js/scrolla.min.js') }}"></script><!-- ON SCROLL CONTENT ANIMTE   --> 
+<script   src="{{ url('js/custom.js') }}"></script><!-- CUSTOM FUCTIONS  -->
+<script   src="{{ url('js/shortcode.js') }}"></script><!-- SHORTCODE FUCTIONS  -->
+
+
+
+</body>
+
+</html>
