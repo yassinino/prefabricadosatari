@@ -119,9 +119,9 @@
                                          <div class="p-a20 p-t50">
                                             <h4 class="wt-team-title">Modern Line</h4>
                                             <p>Personalitate în forme geometrice.</p>
-                                            <button class="m-b5 site-button panel-button  m-r15" type="button">
+                                            <a href="/vallas/modern-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -136,9 +136,9 @@
                                             <p>
                                             ”Less is more” în matrițe speciale.
                                             </p>
-                                            <button class="m-b5 site-button panel-button  m-r15" type="button">
+                                            <a href="/vallas/simple-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,9 +152,9 @@
                                             <p>
                                             Garduri cu aspect ultramodern.
                                             </p>
-                                            <button class="m-b5 site-button panel-button  m-r15" type="button">
+                                            <a href="/vallas/aero-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
-                                            </button>
+                                            </a>
                                         </div>
                                   </div>
                                 </div>
@@ -166,9 +166,9 @@
                                          <div class="p-a20 p-t50">
                                             <h4 class="wt-team-title">Nature Line</h4>
                                             <p>Lasă-te inspirat de natură.</p>
-                                            <button class="m-b5 site-button panel-button  m-r15" type="button">
+                                            <a href="/vallas/nature-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
-                                            </button>
+                                            </a>
                                         </div>
                                   </div>
                                 </div>
