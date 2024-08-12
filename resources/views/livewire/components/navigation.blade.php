@@ -4,9 +4,10 @@
                 <div class="container">
                     <div class="wt-topbar-right">
                         <ul class="list-unstyled e-p-bx">
-                            <li><i class="fa fa-map-marker"></i>Str. Bradului 2, Măgurele, Ilfov</li>
-                            <li><i class="fa fa-phone"></i>(654) 321-7654</li>
-                            <li><i class="fa fa-envelope"></i>mail@thewebmax.com</li>
+                            <li><i class="fa fa-map-marker"></i>Av. Ramón d’Olzina, 85 local 6
+                            43080 VILA-SECA (Tarragona)</li>
+                            <li><i class="fa fa-phone"></i>(+34) 661 015 962</li>
+                            <li><i class="fa fa-envelope"></i>contact@prefabricadosatari.com</li>
                             
                         </ul>
                         <ul class="social-bx list-inline">
@@ -24,7 +25,7 @@
                     <div class="container">
                         <div class="logo-header">
                             <a href="{{ url('/') }}">
-                                <img src="{{ url('images/logo_montajes.png') }}" width="171" height="49" alt="" >
+                                <img src="{{ url('images/logo.png') }}" width="171" height="49" alt="" >
                             </a>
                         </div>
                         
