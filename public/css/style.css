@@ -7200,6 +7200,17 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	/*background-color:#212427;*/
 	border-bottom: 1px dashed #000000;
 }
+
+.footer-top .fa, .top-bar .fa {
+    vertical-align: middle;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    padding: 8px;
+    width: 36px;
+    height: 33px;
+    text-align: center;
+    border-radius: 9px;
+}
+
 .top-bar .fa {
     vertical-align: middle;
     background-color: rgba(0, 0, 0, 0.08);
@@ -7249,6 +7260,11 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 /*-------------------------------------
 	2. social-links (right) 
 -------------------------------------*/
+.footer-top .social-bx{ 
+	margin:0 0 0 15px;
+	float:left;
+}
+
 .social-bx,
 .login-bx { 
 	margin:0 0 0 15px;
@@ -8401,12 +8417,12 @@ header .logo{
 	display: flex;
 	justify-content: end;
 }
-.header-style-3  .social-bx li {
+.footer-top  .social-bx li, .header-style-3  .social-bx li {
 	padding-left: 2px;
 	padding-right: 2px;
 	display: inline-block;
 }
-.header-style-3  .social-bx li a{
+.footer-top  .social-bx li a, .header-style-3  .social-bx li a{
 	background-color: #000;
 }
 
@@ -9218,16 +9234,26 @@ header .logo{
 		float: none;
 		margin: 10px 0px 0px 0px;
 	}
+
+	.footer-top .social-bx{
+		float: none;
+		margin: 10px 0px 0px 0px;
+	}
 }
-.header-style-1  .social-bx li {
+.footer-top  .social-bx li, .header-style-1  .social-bx li {
 	padding-left: 2px;
 	padding-right: 2px;
 	display: inline-block;
 }
+
+.footer-top  .social-bx li a{
+	background-color: #383838;
+}
+
 .header-style-1  .social-bx li a{
 	background-color: #f7f7f7;
 }
-.top-bar .fa{
+.footer-top .fa, .top-bar .fa{
 	font-size: 15px;
 }
 .header-style-1 .main-bar .container{display: flex; justify-content: space-between; position: relative;height: 110px;}
@@ -9994,7 +10020,7 @@ header .logo{
 .footer-dark .widget_recent_entries ul li a, 
 .footer-dark .widget_services ul li a { 
 	font-size: 16px;
-	color:#999;
+	color:#ffffff;
 }
 .footer-dark .footer-top a:active,
 .footer-dark .footer-top a:focus,

@@ -30,13 +30,11 @@
                                   
                                 </ul>
 
-                                <ul class="social-icons social-square social-darkest">
-                                        <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
-                                        <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                                <ul class="social-bx list-inline">
+                                    <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
+                                    <li><a href="javascript:void(0);" class="fa fa-whatsapp"></a></li>
                                 </ul>
                             </div>
                         </div>
