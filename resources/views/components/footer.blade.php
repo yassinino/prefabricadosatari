@@ -19,13 +19,12 @@
                                 </div>
                                 <ul>
                                     <li>
-                                    Av. Ramón d’Olzina, 85 local 6
-                                    43080 VILA-SECA (Tarragona)
+                                    Cami dels Catalans N:4, 43330 Riudoms, Tarragona
                                     </li>
                                     <li>
                                     Luni-Vineri: 8-18
                                     </li>
-                                    <li>contact@prefabricadosatari.com</li>
+                                    <li>pfdatari@gmail.com</li>
                                     <li>(+34) 661 015 962</li>
                                   
                                 </ul>
