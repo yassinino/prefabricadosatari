@@ -50,6 +50,9 @@
                                         <li>
                                             <a href="/vallas/nature-line">Nature Line</a>
                                         </li>
+                                        <li>
+                                            <a href="/component-gard">Componente gard</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>

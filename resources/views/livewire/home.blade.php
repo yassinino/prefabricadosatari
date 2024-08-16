@@ -19,8 +19,8 @@
                                         <div class="wt-icon-box-wraper left p-l10">
                                             <div class="icon-content">
                                                 <h5 class="wt-tilte text-uppercase m-b0">Nuestra dirección:</h5> <br>
-                                                <p>Av. Ramón d’Olzina, 85 local 6 <br> 43080 VILA-SECA (Tarragona)
-                                                <br>Email: office@konkretline.ro
+                                                <p>Cami dels Catalans N:4, <br> 43330 Riudoms, Tarragona 
+                                                <br>Email: pfdatari@gmail.com
                                                 </p>
                                                 
                                             </div>

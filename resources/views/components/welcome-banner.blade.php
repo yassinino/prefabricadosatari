@@ -55,7 +55,7 @@
                                     <div class="tp-caption  tp-resizeme" 
                                     id="slide-100-layer-3" 
                                     data-x="['left','left','left','left']" data-hoffset="['280','200','150','100']" 
-                                    data-y="['top','top','top','top']" data-voffset="['300','300','300','300']"  
+                                    data-y="['top','top','top','top']" data-voffset="['250','250','250','250']"  
                                     data-width="none"
                                     data-height="none"
                                     data-fontsize="['60','60','40','24']"
@@ -81,57 +81,25 @@
                                     color: rgba(255, 255, 255, 1.00);
                                     border-width:0px;">
                                     <span style="font-family:'Roboto' ;">
-                                        <span class="text-uppercase site-text-primary">Tenemos </span>
+                                        <span class="text-uppercase site-text-primary">FABRICAMOS </span>
                                     </span>
                                     </div>
                                     
                                     <!-- LAYER NR. 4 [ for title ] -->
                                     <div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur" 
                                     id="slide-100-layer-4" 
-                                    data-x="['left','left','left','left']" data-hoffset="['570','500','350','220']" 
+                                    data-x="['left','left','left','left']" data-hoffset="['350','500','350','220']" 
                                     data-y="['top','top','top','top']" data-voffset="['300','300','300','300']"  
                                     data-width="none"
                                     data-height="none"
-                                    data-fontsize="['60','60','40','24']"
+                                    data-fontsize="['40','40','40','24']"
                                     data-lineheight="['70','70','70','60']"
                                     data-whitespace="nowrap"
                                     data-type="text" 
                                     data-responsive_offset="on" 
                                     
                                     data-frames='[
-                                    {"delay":2000,"split":"chars","splitdelay":0.1,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},
-                                    {"delay":"+1200","split":"chars","splitdelay":0.03,"speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;","ease":"Power3.easeIn"}
-                                    ]'
-                                    
-                                    data-textAlign="['left','left','left','left']"
-                                    data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[0,0,0,0]"
-                                
-                                    style="z-index: 13; 
-                                    white-space: normal; 
-                                    font-weight: 700; 
-                                    color: rgba(255, 255, 255, 1.00);
-                                    border-width:0px;">
-                                    <span class="text-uppercase" style="font-family:'Roboto' ;">Pladur</span>
-                                    </div>
-                                    
-                                    <!-- LAYER NR. 5 [ for title ] -->
-                                    <div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur" 
-                                    id="slide-100-layer-5" 
-                                    data-x="['left','left','left','left']" data-hoffset="['570','500','350','220']" 
-                                    data-y="['top','top','top','top']" data-voffset="['300','300','300','300']"  
-                                    data-width="none"
-                                    data-height="none"
-                                    data-fontsize="['60','60','40','24']"
-                                    data-lineheight="['70','70','70','60']"
-                                    data-whitespace="nowrap"
-                                    data-type="text" 
-                                    data-responsive_offset="on" 
-                                    
-                                    data-frames='[
-                                    {"delay":5000,"split":"chars","splitdelay":0.1,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},
+                                    {"delay":1500,"split":"chars","splitdelay":0.05,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},
                                     {"delay":"+1000","split":"chars","splitdelay":0.03,"speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;","ease":"Power3.easeIn"}
                                     ]'
                                     
@@ -143,28 +111,29 @@
                                 
                                     style="z-index: 13; 
                                     white-space: normal; 
-                                    font-weight: 700; 
+                                    font-weight: 600;
+                                    font-size: 15px;
                                     color: rgba(255, 255, 255, 1.00);
                                     border-width:0px;">
-                                    <span class="text-uppercase" style="font-family:'Roboto' ;">Hormigon</span>
-                                    </div>                            
+                                    <span class="text-uppercase" style="font-family:'Roboto' ;">VALLAS PREFABRICADAS DE HORMIGÓN</span>
+                                    </div>
                                     
-                                    <!-- LAYER NR. 6 [ for title ] -->
+                                    <!-- LAYER NR. 5 [ for title ] -->
                                     <div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur" 
-                                    id="slide-100-layer-6" 
-                                    data-x="['left','left','left','left']" data-hoffset="['570','500','350','220']" 
+                                    id="slide-100-layer-5" 
+                                    data-x="['left','left','left','left']" data-hoffset="['350','500','350','220']" 
                                     data-y="['top','top','top','top']" data-voffset="['300','300','300','300']"  
                                     data-width="none"
                                     data-height="none"
-                                    data-fontsize="['60','60','40','24']"
+                                    data-fontsize="['40','40','40','24']"
                                     data-lineheight="['70','70','70','60']"
                                     data-whitespace="nowrap"
                                     data-type="text" 
                                     data-responsive_offset="on" 
                                     
                                     data-frames='[
-                                    {"delay":8000,"split":"chars","splitdelay":0.1,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},
-                                    {"delay":"+1200","split":"chars","splitdelay":0.03,"speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;","ease":"Power3.easeIn"}
+                                    {"delay":5000,"split":"chars","splitdelay":0.05,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},
+                                    {"delay":"+1500","split":"chars","splitdelay":0.03,"speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;","ease":"Power3.easeIn"}
                                     ]'
                                     
                                     data-textAlign="['left','left','left','left']"
@@ -175,27 +144,92 @@
                                 
                                     style="z-index: 13; 
                                     white-space: normal; 
-                                    font-weight: 700; 
+                                    font-weight: 600; 
                                     color: rgba(255, 255, 255, 1.00);
                                     border-width:0px;">
-                                    <span class="text-uppercase" style="font-family:'Roboto' ;">Techos</span>
-                                    </div>  
+                                    <span class="text-uppercase" style="font-family:'Roboto' ;">PILARES DE HORMIGÓN DECORATIVOS</span>
+                                    </div>                            
                                     
-                                    <!-- LAYER NR. 7 [ for title ] -->
+                                    <!-- LAYER NR. 6 [ for title ] -->
                                     <div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur" 
-                                    id="slide-100-layer-7" 
-                                    data-x="['left','left','left','left']" data-hoffset="['570','500','350','220']" 
+                                    id="slide-100-layer-6" 
+                                    data-x="['left','left','left','left']" data-hoffset="['350','500','350','220']" 
                                     data-y="['top','top','top','top']" data-voffset="['300','300','300','300']"  
                                     data-width="none"
                                     data-height="none"
-                                    data-fontsize="['60','60','40','24']"
+                                    data-fontsize="['40','40','40','24']"
                                     data-lineheight="['70','70','70','60']"
                                     data-whitespace="nowrap"
                                     data-type="text" 
                                     data-responsive_offset="on" 
                                     
                                     data-frames='[
-                                    {"delay":12000,"split":"chars","splitdelay":0.1,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},
+                                    {"delay":10000,"split":"chars","splitdelay":0.05,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},
+                                    {"delay":"+2000","split":"chars","splitdelay":0.03,"speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;","ease":"Power3.easeIn"}
+                                    ]'
+                                    
+                                    data-textAlign="['left','left','left','left']"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                
+                                    style="z-index: 13; 
+                                    white-space: normal; 
+                                    font-weight: 600; 
+                                    color: rgba(255, 255, 255, 1.00);
+                                    border-width:0px;">
+                                    <span class="text-uppercase" style="font-family:'Roboto' ;">CORONACIÓN DE PISCINAS</span>
+                                    </div>  
+
+
+                                    <!-- LAYER NR. 6 [ for title ] -->
+                                    <div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur" 
+                                    id="slide-100-layer-6" 
+                                    data-x="['left','left','left','left']" data-hoffset="['350','500','350','220']" 
+                                    data-y="['top','top','top','top']" data-voffset="['300','300','300','300']"  
+                                    data-width="none"
+                                    data-height="none"
+                                    data-fontsize="['40','40','40','24']"
+                                    data-lineheight="['70','70','70','60']"
+                                    data-whitespace="nowrap"
+                                    data-type="text" 
+                                    data-responsive_offset="on" 
+                                    
+                                    data-frames='[
+                                    {"delay":15000,"split":"chars","splitdelay":0.05,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},
+                                    {"delay":"+2500","split":"chars","splitdelay":0.03,"speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;","ease":"Power3.easeIn"}
+                                    ]'
+                                    
+                                    data-textAlign="['left','left','left','left']"
+                                    data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]"
+                                    data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                
+                                    style="z-index: 13; 
+                                    white-space: normal; 
+                                    font-weight: 600; 
+                                    color: rgba(255, 255, 255, 1.00);
+                                    border-width:0px;">
+                                    <span class="text-uppercase" style="font-family:'Roboto' ;">CUBREMUROS,CUBREPILAR,DECORACIÓN JARDÍN</span>
+                                    </div>
+                                    
+                                    <!-- LAYER NR. 7 [ for title ] -->
+                                    <div class="tp-caption RotatingWords-TitleWhite   tp-resizeme  tounblur" 
+                                    id="slide-100-layer-7" 
+                                    data-x="['left','left','left','left']" data-hoffset="['350','500','350','220']" 
+                                    data-y="['top','top','top','top']" data-voffset="['300','300','300','300']"  
+                                    data-width="none"
+                                    data-height="none"
+                                    data-fontsize="['40','40','40','24']"
+                                    data-lineheight="['70','70','70','60']"
+                                    data-whitespace="nowrap"
+                                    data-type="text" 
+                                    data-responsive_offset="on" 
+                                    
+                                    data-frames='[
+                                    {"delay":20000,"split":"chars","splitdelay":0.05,"speed":500,"frame":"0","from":"sX:0.8;sY:0.8;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},
                                     {"delay":"wait","split":"chars","splitdelay":0.03,"speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;","ease":"Power3.easeIn"}
                                     ]'
                                     
@@ -207,10 +241,10 @@
                                 
                                     style="z-index: 13; 
                                     white-space: normal; 
-                                    font-weight: 700; 
+                                    font-weight: 600; 
                                     color: rgba(255, 255, 255, 1.00);
                                     border-width:0px;">
-                                    <span class="text-uppercase" style="font-family:'Roboto' ; ">Y Mas</span>
+                                    <span class="text-uppercase" style="font-family:'Roboto' ; ">VIGAS DINTELES Y MUCHO MÁS</span>
                                     </div>                              
                                                                                           
                                 
@@ -241,7 +275,7 @@
                                     font-weight: 500; 
                                     color: rgba(255, 255, 255, 0.85);
                                     border-width:0px;">
-                                    <span style="font-family:'Roboto';">Podemos hacer realidad el proyecto que tienes en mente</span>
+                                    <span style="font-family:'Roboto';" class="text-uppercase">Podemos hacer realidad el proyecto que tienes en mente</span>
                                     </div>
                                 
                                     <!-- LAYER NR. 9 [ for readmore botton ] -->
