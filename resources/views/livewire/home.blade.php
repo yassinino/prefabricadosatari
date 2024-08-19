@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                     <div class="wt-media">
-                                        <img src="{{ URL('images/home.jpeg') }}" alt="" class="img-responsive">
+                                        <img src="{{ URL('images/home.png') }}" alt="" class="img-responsive" style="border-radius: 18px;">
                                     </div>
                                 </div>
                         </div>

@@ -43,11 +43,11 @@
                             <div class="widget widget_services">
                                 <h4 class="widget-title">VALLA PREFABRICADA</h4>
                                 <ul>
-                                    <li><a href="#">Paneles de línea Moderna</a></li>
-                                    <li><a href="#">Paneles de línea Simple </a></li>
-                                    <li><a href="#">Paneles de Línea Aero</a></li>
-                                    <li><a href="#">Paneles de Línea Naturales</a></li>
-                                    <li><a href="#">Postes para la valla</a></li>
+                                    <li><a href="/vallas/modern-line">Paneles de línea Moderna</a></li>
+                                    <li><a href="/vallas/simple-line">Paneles de línea Simple </a></li>
+                                    <li><a href="/vallas/aero-line">Paneles de Línea Aero</a></li>
+                                    <li><a href="/vallas/nature-line">Paneles de Línea Naturales</a></li>
+                                    <li><a href="/component-gard">Postes para la valla</a></li>
                                     <li><a href="#">Accesorios y Componentes</a></li>
                                 </ul>
                             </div>
