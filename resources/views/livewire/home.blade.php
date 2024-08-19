@@ -36,7 +36,7 @@
                         <div class="p-4 bg-gray radius-md">
 
                                 <div class="text-left">
-                                    <h4 class="text-uppercase">Gard beton prefabricat. Durabil, fără întreținere.</h4>
+                                    <h4 class="text-uppercase">VALLAS DE HORMIGÓN PREFABRICADA. DURADERO, SIN MANTENIMIENTO.                                    </h4>
                                 </div>
                                 <div class="about-types row">
                                     <div class="col-md-6 col-sm-6 p-tb20">
@@ -45,9 +45,9 @@
                                                 <i class="fa fa-check" aria-hidden="true"></i>
                                             </div>
                                             <div class="icon-content">
-                                                <h5 class="wt-tilte text-uppercase m-b0">Modern.</h5>
+                                                <h5 class="wt-tilte text-uppercase m-b0">MODERNO.</h5>
                                                 <p>
-                                                Panourile Konkret Line sunt caracterizate de acuratețea detaliilor, bine conturate, cu o linie estetică simplă, modernă, rezistentă la trecerea timpului.</p>
+                                                Los paneles de Prefabricados Atari SL se caracterizan por la cuidad de los detalles, bien perfilados, con una línea estética sencilla, moderna, resistente al paso del tiempo.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -57,9 +57,9 @@
                                                 <i class="fa fa-clock-o" aria-hidden="true"></i>
                                             </div>
                                             <div class="icon-content">
-                                                <h5 class="wt-tilte text-uppercase m-b0">Durabil.</h5>
+                                                <h5 class="wt-tilte text-uppercase m-b0">DURABLE.</h5>
                                                 <p>
-                                                Elementele prefabricate urmează un proces riguros de producție. Rezultatul este un gard extrem de rezistent, cu un comportament excelent în condiții vitrege.
+                                                Los elementos prefabricados siguen un riguroso proceso de producción. El resultado es una valla extremadamente resistente y con un excelente comportamiento en condiciones duras.
                                                 </p>
                                             </div>
                                         </div>
@@ -70,8 +70,8 @@
                                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                             </div>
                                             <div class="icon-content">
-                                                <h5 class="wt-tilte text-uppercase m-b0 ">Zero costuri de exploatare</h5>
-                                                <p>Spre deosebire de alte soluții de împrejmuire, gardul prefabricat din beton are o durată de viață de peste 50 de ani fără costuri de întreținere.</p>
+                                                <h5 class="wt-tilte text-uppercase m-b0 ">CERO COSTE MANTENIMENTO</h5>
+                                                <p>A diferencia de otras soluciones de vallado, la valla de hormigón prefabricado tiene una vida útil de más de 50 años sin costes de mantenimiento.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -81,8 +81,8 @@
                                                 <i class="fa fa-line-chart" aria-hidden="true"></i>
                                             </div>
                                             <div class="icon-content">
-                                                <h5 class="wt-tilte text-uppercase m-b0">Garanție 15 Ani</h5>
-                                                <p>Toate componentele prefabricate din beton vin însoțite de un certificat de conformitate și garanție.</p>
+                                                <h5 class="wt-tilte text-uppercase m-b0">GARANTÍA DE 15 AÑOS</h5>
+                                                <p>Todos los elementos prefabricados de hormigón se entregan con un certificado de conformidad y garantía.</p>
                                             </div>
                                         </div>
                                     </div>
