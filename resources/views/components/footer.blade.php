@@ -6,7 +6,7 @@
             <div class="footer-top overlay-wraper">
                 <div class="overlay-main"></div>
                 <div class="container">
-                    <h1 class="text-center" style="padding-bottom:20px;">Fabrică de garduri premium prefabricate din beton</h1>
+                    <h1 class="text-center" style="padding-bottom:20px;">Fábrica de vallas prefabricadas de hormigón de primera calidad.</h1>
                     <div class="row">
 
                         <!-- USEFUL LINKS -->
@@ -22,7 +22,7 @@
                                     Cami dels Catalans N:4, 43330 Riudoms, Tarragona
                                     </li>
                                     <li>
-                                    Luni-Vineri: 8-18
+                                    Lunes a viernes: 8-18
                                     </li>
                                     <li>pfdatari@gmail.com</li>
                                     <li>(+34) 661 015 962</li>
@@ -41,26 +41,27 @@
                         <!-- USEFUL LINKS -->
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="widget widget_services">
-                                <h4 class="widget-title">GARDURI PREFABRICATE</h4>
+                                <h4 class="widget-title">VALLA PREFABRICADA</h4>
                                 <ul>
-                                    <li><a href="#">Panouri Modern Line</a></li>
-                                    <li><a href="#">Panouri Simple Line</a></li>
-                                    <li><a href="#">Panouri Aero Line</a></li>
-                                    <li><a href="#">Panouri Nature Line</a></li>
-                                    <li><a href="#">Stâlpi de gard</a></li>
+                                    <li><a href="#">Paneles de línea Moderna</a></li>
+                                    <li><a href="#">Paneles de línea Simple </a></li>
+                                    <li><a href="#">Paneles de Línea Aero</a></li>
+                                    <li><a href="#">Paneles de Línea Naturales</a></li>
+                                    <li><a href="#">Postes para la valla</a></li>
+                                    <li><a href="#">Accesorios y Componentes</a></li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="widget widget_services">
-                                <h4 class="widget-title">LINK-URI UTILE</h4>
+                                <h4 class="widget-title">ENLACES ÚTILES</h4>
                                 <ul>
-                                    <li><a href="#">Porți metalice</a></li>
-                                    <li><a href="#">Pavaje</a></li>
-                                    <li><a href="#">Decorațiuni</a></li>
-                                    <li><a href="#">Despre noi</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Piezas de metal</a></li>
+                                    <li><a href="#">Aceras</a></li>
+                                    <li><a href="#">Decoraciones</a></li>
+                                    <li><a href="#">Sobre nosotros</a></li>
+                                    <li><a href="#">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -68,8 +69,9 @@
                         <!-- NEWSLETTER -->
                         <div class="col-lg-3 col-md-6">
                             <div class="widget widget_newsletter">
-                                <h4 class="widget-title">OFERTA NOASTRĂ</h4>
-                                <p>Descarcă broșura cu toate produsele și serviciile noastre în format PDF</p>
+                                <h4 class="widget-title">NUESTRA OFERTA</h4>
+                                <p>Descarga libros con todos nuestros productos y servicios en formato PDF</p>
+                                <a href="/catalog/catalog_prefabricados_atari.pdf" target="_blank"><img src="/images/catalog_preview.png" alt="" style="width: 250px;"></a>
 
                             </div>
 

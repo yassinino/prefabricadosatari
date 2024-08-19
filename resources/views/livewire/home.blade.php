@@ -102,9 +102,9 @@
                 
                 	<!-- TITTLE START -->
                     <div class="section-head text-center">
-                        <h1 class="black">Peste 60 de modele unice de gard.</h1>
+                        <h1 class="black">Tenemos Más de 300 diseños de vallas únicos.</h1>
                         <p>
-                        Tehnologia si inovatia investita de-a lungul anilor in procesul de fabricare si designul panourilor au ca rezultat elemente de gard beton de cea mai buna calitate, cu o estetica deosebita.
+                        La tecnología e innovación invertidas a lo largo de los años en el proceso de fabricación y el diseño de los paneles dan como resultado elementos de vallado de hormigón de la mejor calidad, con una estética especial.
                         </p>
                     </div>
                     <!-- TITLE END -->
@@ -117,8 +117,8 @@
                                 <div class="home-four" style="background-image: url(&quot;https://www.konkretline.ro/wp-content/uploads/2024/02/Line-Modern-1-jpg.webp&quot;);">
                                     <div class="home-info">
                                          <div class="p-a20 p-t50">
-                                            <h4 class="wt-team-title">Modern Line</h4>
-                                            <p>Personalitate în forme geometrice.</p>
+                                            <h4 class="wt-team-title">Línea Moderna</h4>
+                                            <p>Personalidad en formas geométricas.</p>
                                             <a href="/vallas/modern-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
                                             </a>
@@ -132,9 +132,9 @@
                                     <div class="home-info">
 
                                          <div class="p-a20 p-t50">
-                                            <h4 class="wt-team-title">Simple Line</h4>
+                                            <h4 class="wt-team-title">Línea sencilla</h4>
                                             <p>
-                                            ”Less is more” în matrițe speciale.
+                                            "Menos es más" en moldes especiales
                                             </p>
                                             <a href="/vallas/simple-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
@@ -148,9 +148,9 @@
                                 <div class="home-four" style="background-image: url(&quot;https://www.konkretline.ro/wp-content/uploads/2024/02/Line-Aero-1-jpg.webp&quot;);">
                                     <div class="home-info">
                                          <div class="p-a20 p-t50">
-                                            <h4 class="wt-team-title">Aero Line</h4>
+                                            <h4 class="wt-team-title">Aero línea</h4>
                                             <p>
-                                            Garduri cu aspect ultramodern.
+                                            Vallas con un aspecto ultramoderno.
                                             </p>
                                             <a href="/vallas/aero-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
@@ -164,8 +164,8 @@
                                 <div class="home-four" style="background-image: url(&quot;https://www.konkretline.ro/wp-content/uploads/2024/02/Line-Nature-1-jpg.webp&quot;);">
                                     <div class="home-info">
                                          <div class="p-a20 p-t50">
-                                            <h4 class="wt-team-title">Nature Line</h4>
-                                            <p>Lasă-te inspirat de natură.</p>
+                                            <h4 class="wt-team-title">Línea Naturaleza</h4>
+                                            <p>Inspírate en la naturaleza.</p>
                                             <a href="/vallas/nature-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
                                             </a>
