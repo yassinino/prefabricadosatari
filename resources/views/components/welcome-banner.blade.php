@@ -302,7 +302,7 @@
                                     
                                     style="z-index:13; text-transform:uppercase; font-weight:700;">
 
-                                        <a href="/" class="site-button button-xl m-r15 radius-sm">Más de 60 modelos</a>
+                                        <a href="/" class="site-button button-xl m-r15 radius-sm">Más de 300 modelos</a>
 
                                     </div>
                                     
