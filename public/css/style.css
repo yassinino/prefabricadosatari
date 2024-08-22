@@ -7440,10 +7440,10 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	vertical-align:center;
 }
 .logo-header img { 
-	max-width:100%; 
-    width: 150px !important;
-	vertical-align:bottom;
-	margin-top: 20px;
+	max-width: 100%;
+    width: 149px !important;
+    vertical-align: bottom;
+    margin-top: 50px;
 }
 .logo-header span,
 .logo-footer span { 
