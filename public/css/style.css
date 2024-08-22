@@ -807,8 +807,9 @@ h6 {
 3. TEXT & PARAGRAPH 
 ======================================*/
 p {
-  line-height:24px;
-  margin-bottom:24px;
+    line-height: 30px;
+    margin-bottom: 24px;
+    font-size: 16px;
 }
 strong { 
 	font-weight:600;

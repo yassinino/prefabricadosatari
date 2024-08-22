@@ -10,6 +10,7 @@ use App\Http\Livewire\ContactPage;
 use App\Http\Livewire\VallasPage;
 use App\Http\Livewire\GaleriePage;
 use App\Http\Livewire\PuertasPage;
+use App\Http\Livewire\AboutUsPage;
 use App\Http\Livewire\Admin\GalerieAdminPage;
 
 use Illuminate\Support\Facades\Route;
@@ -41,6 +42,8 @@ Route::get('contact', ContactPage::class)->name('contact.view');
 Route::get('vallas/{slug}', VallasPage::class)->name('vallas.view');
 
 Route::get('puertas', PuertasPage::class)->name('puertas.view');
+
+Route::get('about-us', AboutUsPage::class)->name('aboutus.view');
 
 Route::get('galerie', GaleriePage::class)->name('galerie.view');
 
