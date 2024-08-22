@@ -24,7 +24,7 @@
                     <div class="container">
                         <div class="logo-header">
                             <a href="{{ url('/') }}">
-                                <img src="{{ url('images/logo.png') }}" width="171" height="49" alt="" >
+                                <img src="{{ url('images/logo_text.png') }}" width="171" height="49" alt="" >
                             </a>
                         </div>
                         
