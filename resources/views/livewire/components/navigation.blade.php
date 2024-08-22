@@ -39,6 +39,9 @@
                                     <a href="{{ url('/') }}">Vallas <i class="fa fa-chevron-down"></i></a>
                                     <ul class="sub-menu">
                                         <li>
+                                            <a href="/all-models">Todo Los Modelos</a>
+                                        </li>
+                                        <li>
                                             <a href="/vallas/modern-line">Modern Line</a>
                                         </li>
                                         <li>
@@ -51,7 +54,13 @@
                                             <a href="/vallas/nature-line">Nature Line</a>
                                         </li>
                                         <li>
-                                            <a href="/component-gard">Componente gard</a>
+                                            <a href="/component-gard">Componentes De Valla</a>
+                                        </li>
+                                        <li>
+                                            <a href="/all-models">Paneles Medida Especial</a>
+                                        </li>
+                                        <li>
+                                            <a href="/all-models">Double Cara</a>
                                         </li>
                                     </ul>
                                 </li>

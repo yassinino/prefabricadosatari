@@ -41,10 +41,6 @@
                                 </p>
 
                                 <p>
-                                    Prefabricados Atari sl – Nr. Înmatriculare: J23/1888/2011; Cod Unic de Inregistrare: 28874302; EUID: ROONRC.J23/1888/2011. Prefabricados Atari este premiantă în 4 topuri în anul 2022 pe care le puteți vedea aici.
-                                </p>
-
-                                <p>
                                 Showroom: <br>
                                     Cami dels Catalans N:4, 43330 Riudoms, Tarragona <br>
                                     Program: Luni-Vineri: 8-18 • Sâmbăta: cu programare telefonică <br>
