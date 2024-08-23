@@ -57,10 +57,10 @@
                                             <a href="/component-gard">Componentes De Valla</a>
                                         </li>
                                         <li>
-                                            <a href="/all-models">Paneles Medida Especial</a>
+                                            <a href="/medida-especial">Paneles Medida Especial</a>
                                         </li>
                                         <li>
-                                            <a href="/all-models">Double Cara</a>
+                                            <a href="/double-cara">VALLA A DOBLE CARA</a>
                                         </li>
                                     </ul>
                                 </li>
