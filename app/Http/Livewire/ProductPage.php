@@ -109,7 +109,7 @@ class ProductPage extends Component
 
         $products = Product::whereHas('collections', function($query) use($ids){
             $query->whereIn('lunar_collections.id', $ids);
-        })->whereNot('id', $this->url->element->id)->take(4)->get();
+        })->whereNot('id', $this->url->element->id)->where('status', 'published')->take(4)->get();
 
         return $products;
     }
