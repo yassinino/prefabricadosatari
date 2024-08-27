@@ -20,7 +20,7 @@
 
 
 
-                                    <button class="btn" wire:click="loadMore">Load More</button>
+                                    <button class="btn" wire:click="loadMore">Cargar más</button>
                                    
                                 </div>
                                 
