@@ -1,4 +1,4 @@
 <span>Pricio: </span> <br>
 <span class="price" {{ $attributes }}>
-{{ $price?->price->formatted() }}
+    Desde {{ $price?->price->formatted() }}
 </span>
