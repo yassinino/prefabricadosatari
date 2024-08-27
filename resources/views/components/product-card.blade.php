@@ -24,9 +24,9 @@
                                     <x-product-price :product="$product" />
 
                                     <div>
-                                    <button class="m-b5 mt-3 output-button" type="button">
+                                    <a href="{{ route('product.view', $product->defaultUrl->slug) }}" class="m-b5 mt-3 output-button" type="button">
                                         <span class="site-button-inr ">Ver Detalles</span>
-                                    </button>
+                                    </a>
                                     </div>
                                     
                                 </div>

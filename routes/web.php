@@ -8,6 +8,8 @@ use App\Http\Livewire\ProductPage;
 use App\Http\Livewire\SearchPage;
 use App\Http\Livewire\ContactPage;
 use App\Http\Livewire\VallasPage;
+use App\Http\Livewire\AllModelsPage;
+use App\Http\Livewire\ComponentGardPage;
 use App\Http\Livewire\GaleriePage;
 use App\Http\Livewire\PuertasPage;
 use App\Http\Livewire\AboutUsPage;
@@ -40,6 +42,10 @@ Route::get('checkout', CheckoutPage::class)->name('checkout.view');
 Route::get('contact', ContactPage::class)->name('contact.view');
 
 Route::get('vallas/{slug}', VallasPage::class)->name('vallas.view');
+
+Route::get('all-models', AllModelsPage::class)->name('all_models.view');
+
+Route::get('component-gard', ComponentGardPage::class)->name('component_gard.view');
 
 Route::get('puertas', PuertasPage::class)->name('puertas.view');
 

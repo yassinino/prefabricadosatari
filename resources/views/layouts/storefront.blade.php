@@ -22,10 +22,6 @@
     <link rel="stylesheet" type="text/css" href="{{ url('css/loader.min.css') }}"><!-- LOADER STYLE SHEET -->   
     <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}"><!-- MAIN STYLE SHEET -->
     <link rel="stylesheet" type="text/css" class="skin" href="{{ url('css/skin/skin-5.css') }}"><!-- THEME COLOR CHANGE STYLE SHEET -->
-    <script
-        defer
-        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
 
     
     <!-- REVOLUTION SLIDER CSS -->
@@ -84,7 +80,11 @@
 
 <!-- REVOLUTION SLIDER SCRIPT FILES -->
 <script  src="{{ url('js/rev-script-4.js') }}"></script>
-
+    <!-- Alpine Plugins -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Alpine Core -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 <script>
 $(document).ready(function() {
