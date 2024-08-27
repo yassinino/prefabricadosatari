@@ -34,7 +34,7 @@
                                         </div>
                                         <div class="icon-content">
                                             <h5>LLÁMANOS</h5>
-                                            <p>+91 564 548 4854</p>
+                                            <p>(+34) 661 015 962</p>
                                         </div>
                                     </div>
                             </div>
@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5>ESCRÍBENOS</h5>
-                                        <p>info@montajesatari.com</p>
+                                        <p>pfdatari@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5>OFICINA</h5>
-                                        <p>Av. Ramón d’Olzina, 85 local 6 <br> 43080 VILA-SECA (Tarragona)</p>
+                                        <p>Cami dels Catalans N:4, <br> 43330 Riudoms, <br> Tarragona</p>
                                     </div>
                                 </div>
                             </div>
