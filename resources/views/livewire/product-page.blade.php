@@ -54,16 +54,31 @@
                     <div class="col-lg-8 col-md-12">
                         <div class="wt-post-title ">
                             <h3 class="post-title"><a href="javascript:void(0);">{{ $this->product->translateAttribute('name') }}</a></h3>
-                            <p>{{ $this->variant->sku }}</p>
+                            <p>{{  $this->product->collections[0]->translateAttribute('name') }}</p>
                         </div>
                         <h2 class="m-tb10">
                             <x-product-price class="ml-4 font-medium"
                                      :variant="$this->variant" />
                         </h2>
+
+                        @if($this->product->collections[0]->translateAttribute('name') == 'Pilares')
                         
                         <p style="margin-bottom : 0px!important;">
                         <b>Moderno, duradero y sin mantenimiento.</b> <br>
-                            * Peso 70 kilos <br>
+                            * Peso 98 Kg <br>
+                            * Dimensiones 2850 x 130 x 130 mm <br>
+                            Ejemplar​ : <br>
+                            * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
+
+                            * Descripción {!! $this->product->translateAttribute('description') !!}
+
+                        </p>
+
+                        @else
+
+                        <p style="margin-bottom : 0px!important;">
+                        <b>Moderno, duradero y sin mantenimiento.</b> <br>
+                            * Peso 70 Kg <br>
                             * Dimensiones 200 × 50 × 4 cm <br>
                             Ejemplar​ : <br>
                             * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
@@ -71,6 +86,9 @@
                             * Descripción {!! $this->product->translateAttribute('description') !!}
 
                         </p>
+
+
+                        @endif
 
                         
                         <p>
