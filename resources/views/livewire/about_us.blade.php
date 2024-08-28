@@ -43,7 +43,6 @@
                                 <p>
                                 Showroom: <br>
                                     Cami dels Catalans N:4, 43330 Riudoms, Tarragona <br>
-                                    Program: Luni-Vineri: 8-18 • Sâmbăta: cu programare telefonică <br>
                                     Telefon / WhatsApp: (+34) 661 015 962
                                 </p>
                             </div>

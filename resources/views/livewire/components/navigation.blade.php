@@ -69,16 +69,16 @@
                                 </li>
 
                                 <li>
-                                    <a href="{{ url('/puertas') }}">Puertas</a>
+                                    <a href="#">Puertas</a>
                                 </li>
 
                                 <li>
-                                    <a href="{{ url('/') }}">Decoración de jardín</a>
+                                    <a href="#">Decoración de jardín</a>
                                 </li>
 
 
                                 <li>
-                                    <a href="{{ url('/') }}">Info</a>
+                                    <a href="#">Info</a>
                                 </li>
 
                                 <li>
