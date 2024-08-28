@@ -73,8 +73,10 @@
                             * Descripción {!! $this->product->translateAttribute('description') !!}
 
                         </p>
+
+                      
                         <!-- medidas especial -->
-                        @elseif(in_array(9, $this->product->collections->pluck('id')->toArray()))
+                        @elseif(in_array(8, $this->product->collections->pluck('id')->toArray()))
 
                         <p style="margin-bottom : 0px!important;">
                         <b>Moderno, duradero y sin mantenimiento.</b> <br>
