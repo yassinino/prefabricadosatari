@@ -20,6 +20,6 @@ class AllModelsPage extends Component
         $products = Product::whereHas('collections', function($query){
             $query->where('lunar_collections.id', '<>' , 6);
         })->where('status', 'published')->take($this->amount)->orderBy('created_at', 'desc')->get();
-        return view('livewire.all_models', ['products' => $products])->section('slot');
+        return view('livewire.all_models', ['products' => $products]);
     }
 }

@@ -17,7 +17,10 @@ class ComponentGardPage extends Component
 
     public function render()
     {
-        $products = Product::where('status', 'published')->take($this->amount)->get();
-        return view('livewire.component_gard', ['products' => $products])->section('slot');
+
+        $products = Product::whereHas('collections', function($query){
+            $query->where('lunar_collections.id', 7); // get puertas collection
+        })->get();
+        return view('livewire.component_gard', ['products' => $products]);
     }
 }
