@@ -114,7 +114,7 @@
                         
                             <!-- COLUMNS 1 --> 
                             <div class="col-lg-3 col-md-6 col-sm-12 m-b30 animate" data-animate="zoomIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                                <div class="home-four" style="background-image: url(&quot;https://www.konkretline.ro/wp-content/uploads/2024/02/Line-Modern-1-jpg.webp&quot;);">
+                                <div class="home-four" style="background-image: url({{ url('images/linea_moderna.jpeg') }});">
                                     <div class="home-info">
                                          <div class="p-a20 p-t50">
                                             <h4 class="wt-team-title">Línea Moderna</h4>
@@ -128,13 +128,13 @@
                             </div>
                             <!-- COLUMNS 2 -->
                             <div class="col-lg-3 col-md-6 col-sm-12 m-b30 animate" data-animate="zoomIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                                <div class="home-four" style="background-image: url(&quot;https://www.konkretline.ro/wp-content/uploads/2024/02/Line-Simple-1-jpg.webp&quot;);">
+                                <div class="home-four" style="background-image: url({{ url('images/linea_sencilla.jpeg') }});">
                                     <div class="home-info">
 
                                          <div class="p-a20 p-t50">
                                             <h4 class="wt-team-title">Línea sencilla</h4>
                                             <p>
-                                            "Menos es más" en moldes especiales
+                                            "Menos es más" en moldes especiales.
                                             </p>
                                             <a href="/vallas/simple-line" class="m-b5 site-button panel-button  m-r15">
                                                 <span class="site-button-inr ">Ver Paneles</span>
@@ -145,7 +145,7 @@
                             </div>
                             <!-- COLUMNS 3 -->
                             <div class="col-lg-3 col-md-6 col-sm-12 m-b30 animate" data-animate="zoomIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                                <div class="home-four" style="background-image: url(&quot;https://www.konkretline.ro/wp-content/uploads/2024/02/Line-Aero-1-jpg.webp&quot;);">
+                                <div class="home-four" style="background-image: url({{ url('images/linea_aero.jpeg') }});">
                                     <div class="home-info">
                                          <div class="p-a20 p-t50">
                                             <h4 class="wt-team-title">Aero línea</h4>
@@ -161,7 +161,7 @@
                             </div>
                             <!-- COLUMNS 4 -->
                             <div class="col-lg-3 col-md-6 col-sm-12 m-b30 animate" data-animate="zoomIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                                <div class="home-four" style="background-image: url(&quot;https://www.konkretline.ro/wp-content/uploads/2024/02/Line-Nature-1-jpg.webp&quot;);">
+                                <div class="home-four" style="background-image: url({{ url('images/linea_nat.jpeg') }});">
                                     <div class="home-info">
                                          <div class="p-a20 p-t50">
                                             <h4 class="wt-team-title">Línea Naturaleza</h4>
