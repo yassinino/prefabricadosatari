@@ -65,7 +65,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/') }}">Promo</a>
+                                    <a href="#">Promo</a>
                                 </li>
 
                                 <li>
@@ -75,7 +75,6 @@
                                 <li>
                                     <a href="#">Decoración de jardín</a>
                                 </li>
-
 
                                 <li>
                                     <a href="#">Info</a>
