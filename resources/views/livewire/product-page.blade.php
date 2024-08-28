@@ -60,6 +60,13 @@
                             <x-product-price class="ml-4 font-medium"
                                      :variant="$this->variant" />
                         </h2>
+                        <p>
+                        Características del panel de valla de hormigón. <br>
+                            * Peso 70 kilos <br>
+                            * Dimensiones 200 × 50 × 4 cm <br>
+                            Ejemplar​  <br>
+                            * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
+                        </p>
                         <div class="wt-post-text">
                             <p class="m-b10">{!! $this->product->translateAttribute('description') !!}</p> 
                         </div>
