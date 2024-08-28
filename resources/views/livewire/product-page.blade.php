@@ -61,15 +61,21 @@
                                      :variant="$this->variant" />
                         </h2>
                         <p>
-                        Características del panel de valla de hormigón. <br>
                             * Peso 70 kilos <br>
                             * Dimensiones 200 × 50 × 4 cm <br>
                             Ejemplar​  <br>
                             * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
+
+
+                        * Descripción {!! $this->product->translateAttribute('description') !!}
                         </p>
-                        <div class="wt-post-text">
-                            <p class="m-b10">{!! $this->product->translateAttribute('description') !!}</p> 
-                        </div>
+                        <p>
+                        <b>Vallas prefabricadas de hormigón o mármol recompuesto.</b> <br>
+                            Vallas prefabricadas de hormigón de la marca Prefabricados Atari SL, que destacan por su depurado diseño, de líneas claras y limpias.
+                            <br>Paneles con armoniosas formas geométricas o estampados en madera, piedra o ladrillo. 
+                            <br>Nuestros paneles se distinguen por su apariencia, textura fina y calidad de producción.
+                        </p>
+                       
                         <livewire:components.add-to-cart :purchasable="$this->variant"
                                                          :wire:key="$this->variant->id">
                     </div>
