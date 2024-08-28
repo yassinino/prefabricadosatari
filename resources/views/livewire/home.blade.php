@@ -192,10 +192,10 @@
                         <div class="col-lg-5 col-md-12 m-b30">
                             <div class="section-head text-left">
                                 <h2>Pilares  para valla de hormigon</h2>
-                                <p>Prefabricados Atari SL cuenta con 5 modelos de pilares universales e industriales que cubren todo tipo de ramales de valla: postes de línea, esquineros, ramales y terminales.</p>
-                                <button class="m-b5 site-button panel-button  m-r15" type="button">
+                                <p>Prefabricados Atari SL cuenta con mas de 5 modelos de pilares universales e industriales que cubren todo tipo de ramales de valla: postes de línea, esquineros, ramales y terminales.</p>
+                                <a href="/component-gard" class="m-b5 site-button panel-button  m-r15" type="button">
                                     <span class="site-button-inr ">Ver modelos de publicaciones</span>
-                                </button>
+                                </a>
                             </div>
 
                         </div>

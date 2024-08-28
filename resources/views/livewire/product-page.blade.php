@@ -60,7 +60,9 @@
                             <x-product-price class="ml-4 font-medium"
                                      :variant="$this->variant" />
                         </h2>
+                        
                         <p style="margin-bottom : 0px!important;">
+                        <b>Moderno, duradero y sin mantenimiento.</b> <br>
                             * Peso 70 kilos <br>
                             * Dimensiones 200 × 50 × 4 cm <br>
                             Ejemplar​ : <br>
