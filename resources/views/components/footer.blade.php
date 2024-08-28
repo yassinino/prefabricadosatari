@@ -87,7 +87,7 @@
                 <div class="container p-t30">
                     <div class="row">
                         <div class="wt-footer-bot-left">
-                            <span class="copyrights-text">© {{ now()->year }} Your Company. All Rights Reserved. Prefabricadosatari.</span>
+                            <span class="copyrights-text">© {{ now()->year }} Prefabricadosatari. All Rights Reserved.</span>
                         </div>
                         <div class="wt-footer-bot-right">
                             <ul class="copyrights-nav pull-right"> 
