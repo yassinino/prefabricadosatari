@@ -60,15 +60,17 @@
                             <x-product-price class="ml-4 font-medium"
                                      :variant="$this->variant" />
                         </h2>
-                        <p>
+                        <p style="margin-bottom : 0px!important;">
                             * Peso 70 kilos <br>
                             * Dimensiones 200 × 50 × 4 cm <br>
-                            Ejemplar​  <br>
+                            Ejemplar​ : <br>
                             * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
 
+                            * Descripción {!! $this->product->translateAttribute('description') !!}
 
-                        * Descripción {!! $this->product->translateAttribute('description') !!}
                         </p>
+
+                        
                         <p>
                         <b>Vallas prefabricadas de hormigón o mármol recompuesto.</b> <br>
                             Vallas prefabricadas de hormigón de la marca Prefabricados Atari SL, que destacan por su depurado diseño, de líneas claras y limpias.
