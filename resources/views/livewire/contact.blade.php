@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="icon-content">
                                         <h5>ESCRÍBENOS</h5>
-                                        <p>pfdatari@gmail.com</p>
+                                        <p>contact@prefabricadosatari.com</p>
                                     </div>
                                 </div>
                             </div>

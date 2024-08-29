@@ -6,7 +6,7 @@
                         <ul class="list-unstyled e-p-bx">
                             <li><i class="fa fa-map-marker"></i>Cami dels Catalans N:4, 43330 Riudoms, Tarragona</li>
                             <li><i class="fa fa-phone"></i>(+34) 661 015 962</li>
-                            <li><i class="fa fa-envelope"></i>pfdatari@gmail.com</li>
+                            <li><i class="fa fa-envelope"></i>contact@prefabricadosatari.com</li>
                             
                         </ul>
                         <ul class="social-bx list-inline">

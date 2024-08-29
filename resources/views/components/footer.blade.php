@@ -24,7 +24,7 @@
                                     <li>
                                     Lunes a viernes: 8-18
                                     </li>
-                                    <li>pfdatari@gmail.com</li>
+                                    <li>contact@prefabricadosatari.com</li>
                                     <li>(+34) 661 015 962</li>
                                   
                                 </ul>

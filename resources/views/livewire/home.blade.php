@@ -20,7 +20,7 @@
                                             <div class="icon-content">
                                                 <h5 class="wt-tilte text-uppercase m-b0">Nuestra dirección:</h5> <br>
                                                 <p>Cami dels Catalans N:4, <br> 43330 Riudoms, Tarragona 
-                                                <br>Email: pfdatari@gmail.com
+                                                <br>Email: contact@prefabricadosatari.com
                                                 </p>
                                                 
                                             </div>
