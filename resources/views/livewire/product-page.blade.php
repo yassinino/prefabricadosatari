@@ -44,7 +44,13 @@
                     
                     <div class="col-lg-8 col-md-12">
                         <div class="wt-post-title ">
-                            <h3 class="post-title"><a href="javascript:void(0);">{{ $this->product->translateAttribute('name') }} - {{ $this->variant->sku }}</a></h3>
+                            <h3 class="post-title"><a href="javascript:void(0);">{{ $this->product->translateAttribute('name') }}
+                            
+                            @if($this->product->collections[0]->translateAttribute('name') == 'Cubre pilar')
+                            - {{ $this->variant->sku }}
+                            @endif
+                        
+                        </a></h3>
                             <p>{{  $this->product->collections[0]->translateAttribute('name') }}</p>
                         </div>
                         <h2 class="m-tb10">
