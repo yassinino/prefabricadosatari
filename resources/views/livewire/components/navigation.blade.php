@@ -65,7 +65,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Promo</a>
+                                    <a href="/promo">Promo</a>
                                 </li>
 
                                 <li>

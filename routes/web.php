@@ -12,6 +12,7 @@ use App\Http\Livewire\AllModelsPage;
 use App\Http\Livewire\ComponentGardPage;
 use App\Http\Livewire\GaleriePage;
 use App\Http\Livewire\PuertasPage;
+use App\Http\Livewire\PromoPage;
 use App\Http\Livewire\AboutUsPage;
 use App\Http\Livewire\Admin\GalerieAdminPage;
 
@@ -44,6 +45,8 @@ Route::get('contact', ContactPage::class)->name('contact.view');
 Route::get('vallas/{slug}', VallasPage::class)->name('vallas.view');
 
 Route::get('all-models', AllModelsPage::class)->name('all_models.view');
+
+Route::get('promo', PromoPage::class)->name('promo.view');
 
 Route::get('component-gard', ComponentGardPage::class)->name('component_gard.view');
 
