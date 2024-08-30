@@ -57,11 +57,13 @@
                             <div class="widget widget_services">
                                 <h4 class="widget-title">ENLACES ÚTILES</h4>
                                 <ul>
-                                    <li><a href="#">Piezas de metal</a></li>
-                                    <li><a href="#">Aceras</a></li>
-                                    <li><a href="#">Decoraciones</a></li>
-                                    <li><a href="#">Sobre nosotros</a></li>
-                                    <li><a href="#">Contacto</a></li>
+                                    <li><a href="/about-us">Sobre nosotros</a></li>
+                                    <li><a href="/aviso-legal">Aviso legal</a></li>
+                                    <li><a href="/politica-de-envio-y-devoluciones">Política de envío y devoluciones</a></li>
+                                    <li><a href="#">Términos y condiciones</a></li>
+                                    <li><a href="#">Condiciones generales de contratación</a></li>
+                                    <li><a href="#">Política de cookies</a></li>
+                                    <li><a href="#">Política de privacidad</a></li>
                                 </ul>
                             </div>
                         </div>

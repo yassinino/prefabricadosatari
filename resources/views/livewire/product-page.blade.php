@@ -132,7 +132,6 @@
 
                         <p style="margin-bottom : 0px!important;">
                         <b>Moderno, duradero y sin mantenimiento.</b> <br>
-                            * Peso 70 Kg <br>
                             * Dimensiones {{  $this->dimension->translate('name') }} <br>
                             Ejemplar​ : <br>
                             * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
