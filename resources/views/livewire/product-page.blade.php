@@ -193,8 +193,3 @@
         </div>
     </div>
 
-
-    <script>
-
-alert('hello')
-</script>
