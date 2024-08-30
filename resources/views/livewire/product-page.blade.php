@@ -1,14 +1,6 @@
 <div class="page-content">
-        
-
-        <!-- BREADCRUMB ROW END -->                   
-        
-        <!-- SECTION CONTENT START -->
         <div class="section-full p-t40 p-b50">
-        
-            <!-- PRODUCT DETAILS -->
             <div class="container woo-entry">
-            
                 <div class="row m-b30">
                 
                     <div class="col-lg-4 col-md-8 m-b30">
@@ -16,7 +8,7 @@
                         
                             <div id="sync1" class="owl-carousel owl-theme owl-btn-vertical-center m-b5">
                                 
-                            @foreach ($this->images as $image)
+                            @foreach($this->images as $image)
                             <div class="item">
                                     <div class="mfp-gallery">
                                         <div class="wt-box">
@@ -36,11 +28,10 @@
                             @endforeach
 
 
-
                             </div>
                             
                             <div id="sync2" class="owl-carousel owl-theme">
-                                @foreach ($this->images as $image)
+                                @foreach($this->images as $image)
                                 <div class="item">
                                     <div class="wt-media" wire:key="image_{{ $image->id }}">
                                         <img src="{{ $image->getUrl('small') }}" alt="{{ $this->product->translateAttribute('name') }}">
@@ -61,6 +52,47 @@
                                      :variant="$this->variant" />
                         </h2>
 
+
+                        <form class="mt-4">
+                    <div class="space-y-4 mb-3">
+                        @foreach ($this->productOptions as $option)
+                            <fieldset>
+                                <legend class="text-xs font-medium text-gray-700">
+                                    {{ $option['option']->translate('name') }}
+                                </legend>
+
+                                <div class="flex flex-wrap gap-2 mt-2 text-xs tracking-wide uppercase"
+                                     x-data="{
+                                         selectedOption: @entangle('selectedOptionValues'),
+                                         selectedValues: [],
+                                     }"
+                                     x-init="selectedValues = Object.values(selectedOption);
+                                     $watch('selectedOption', value =>
+                                         selectedValues = Object.values(selectedOption)
+                                     )"
+                                     >
+                                    
+
+                                        <select class="form-control" wire:model="selectedOptionValues.{{ $option['option']->id }}">
+
+                                            @foreach ($option['values'] as $key => $value)
+                                            <option value="{{ $value->id }}" wire:key="{{ $key }}">{{ $value->translate('name') }}</option>
+                                            @endforeach
+
+                                        </select>
+
+                                </div>
+                            </fieldset>
+                        @endforeach
+                    </div>
+
+                    <div class="max-w-xs mt-8">
+                        <livewire:components.add-to-cart :purchasable="$this->variant"
+                                                         :wire:key="$this->variant->id">
+                    </div>
+                </form>
+
+
                         @if($this->product->collections[0]->translateAttribute('name') == 'Pilares')
                         
                         <p style="margin-bottom : 0px!important;">
@@ -75,13 +107,27 @@
                         </p>
 
                       
-                        <!-- medidas especial -->
                         @elseif(in_array(8, $this->product->collections->pluck('id')->toArray()))
 
                         <p style="margin-bottom : 0px!important;">
                         <b>Moderno, duradero y sin mantenimiento.</b> <br>
                             * Peso 50 Kg <br>
                             * Dimensiones 200 × 30 × 4 cm <br>
+                            Ejemplar​ : <br>
+                            * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
+
+                            * Descripción {!! $this->product->translateAttribute('description') !!}
+
+                        </p>
+
+
+                        @elseif($this->product->collections[0]->translateAttribute('name') == 'Cubre pilar')
+
+
+                        <p style="margin-bottom : 0px!important;">
+                        <b>Moderno, duradero y sin mantenimiento.</b> <br>
+                            * Peso 70 Kg <br>
+                            * Dimensiones {{  $this->dimension->translate('name') }} <br>
                             Ejemplar​ : <br>
                             * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
 
@@ -119,7 +165,6 @@
 
                 </div>
                 
-                <!-- TITLE START -->
                     <div class="p-b10">
                         <h2 class="text-uppercase">PRODUCTOS SIMILARES</h2>
                         <div class="wt-separator-outer  m-b30">
@@ -129,27 +174,27 @@
                             </div>
                         </div>
                     </div>
-                <!-- TITLE END -->
                 
                 <div class="row m-b30">
 
                 @foreach($this->similarProducts as $product)
-                    <!-- COLUMNS 1 -->
                     <div class="col-lg-3 col-md-6 col-sm-6 m-b30">
                         <x-product-card :product="$product" />
                     </div>
                 @endforeach
 
+
+
+
                
                 </div>
                     
-
             </div>
-            <!-- PRODUCT DETAILS -->
-                
         </div>
-        <!-- CONTENT CONTENT END -->
-    
-    
     </div>
-    <!-- CONTENT END -->
+
+
+    <script>
+
+alert('hello')
+</script>

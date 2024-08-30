@@ -41,6 +41,7 @@ class ProductPage extends Component
             return [$data['option']->id => $data['values']->first()->id];
         })->toArray();
 
+
         if (! $this->variant) {
             abort(404);
         }
@@ -121,6 +122,10 @@ class ProductPage extends Component
      */
     public function getImagesProperty()
     {
+        // dd($this->product->media);
+        if(count($this->variant->images) > 0){
+            return $this->variant->images;
+        }
         return $this->product->media;
     }
 
@@ -141,6 +146,12 @@ class ProductPage extends Component
 
         return $this->images->first();
     }
+
+    public function getDimensionProperty()
+    {
+        return $this->variant->values->first();
+    }
+
 
     /**
      * {@inheritDoc}
