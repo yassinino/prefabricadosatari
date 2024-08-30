@@ -26,239 +26,38 @@
                     
                     <div class="portfolio-wrap mfp-gallery no-col-gap row">
                     
+                    @for($i = 1; $i <= 36 ; $i++)
                         <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="wt-gallery-bx p-a15">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
                                     <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_1.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_1.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        @if($i <= 14)
+                                        <img src="{{ url('images/galeries/image_'.$i.'.jpeg') }}"  alt="" style="height: 500px!important;">
+                                        @else
+                                        <img src="{{ url('images/galeries/image_'.$i.'.jpg') }}"  alt="" style="height: 500px!important;">
 
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_2.jpeg') }}"  alt="" style="height: 500px!important;">
+                                        @endif
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_2.jpeg') }}" class="mfp-link">
+                                        @if($i <= 14)
+                                            <a href="{{ url('images/galeries/image_'.$i.'.jpeg') }}" class="mfp-link">
                                                 <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
                                             </a>
+                                            @else
+                                            <a href="{{ url('images/galeries/image_'.$i.'.jpg') }}" class="mfp-link">
+                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
+                                            </a>
+                                            @endif
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                        
 
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_3.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_3.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_4.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_4.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_5.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_5.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_6.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_6.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_7.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_7.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_8.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_8.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_9.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_9.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_10.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_10.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_11.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_11.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_12.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_12.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_13.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_13.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                            <div class="wt-gallery-bx p-a15">
-                                <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
-                                    <a href="portfolio-detail.html">
-                                        <img src="{{ url('images/galeries/image_14.jpeg') }}"  alt="" style="height: 500px!important;">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <a href="{{ url('images/galeries/image_14.jpeg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    @endfor
 
                         
                     
