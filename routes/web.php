@@ -15,6 +15,12 @@ use App\Http\Livewire\PuertasPage;
 use App\Http\Livewire\PromoPage;
 use App\Http\Livewire\AvisoLegalPage;
 use App\Http\Livewire\PoliticaEnvioPage;
+use App\Http\Livewire\CondicionesGeneralPage;
+use App\Http\Livewire\TerminosCondicionPage;
+use App\Http\Livewire\PoliticaCookiesPage;
+use App\Http\Livewire\PoliticaPrivacidadPage;
+
+
 use App\Http\Livewire\AboutUsPage;
 use App\Http\Livewire\Admin\GalerieAdminPage;
 
@@ -52,7 +58,16 @@ Route::get('promo', PromoPage::class)->name('promo.view');
 
 Route::get('aviso-legal', AvisoLegalPage::class)->name('aviso_legal.view');
 
-Route::get('politica-de-envio-y-devoluciones', PoliticaEnvioPage::class)->name('politica_envio.envio');
+Route::get('politica-de-envio-y-devoluciones', PoliticaEnvioPage::class)->name('politica_envio.view');
+
+Route::get('terminos-condiciones', TerminosCondicionPage::class)->name('terminos_condicion.view');
+
+Route::get('politica-de-cookies', PoliticaCookiesPage::class)->name('politica_de_cookies.view');
+
+Route::get('politica-de-privacidad', PoliticaPrivacidadPage::class)->name('politica_de_cookies.view');
+
+Route::get('condiciones-contrato', CondicionesGeneralPage::class)->name('condiciones_general.view');
+
 
 Route::get('component-gard', ComponentGardPage::class)->name('component_gard.view');
 

@@ -60,10 +60,10 @@
                                     <li><a href="/about-us">Sobre nosotros</a></li>
                                     <li><a href="/aviso-legal">Aviso legal</a></li>
                                     <li><a href="/politica-de-envio-y-devoluciones">Política de envío y devoluciones</a></li>
-                                    <li><a href="#">Términos y condiciones</a></li>
-                                    <li><a href="#">Condiciones generales de contratación</a></li>
-                                    <li><a href="#">Política de cookies</a></li>
-                                    <li><a href="#">Política de privacidad</a></li>
+                                    <li><a href="/terminos-condiciones">Términos y condiciones</a></li>
+                                    <li><a href="/condiciones-contrato">Condiciones generales de contratación</a></li>
+                                    <li><a href="/politica-de-cookies">Política de cookies</a></li>
+                                    <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
                                 </ul>
                             </div>
                         </div>
