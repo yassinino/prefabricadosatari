@@ -19,8 +19,8 @@ class ComponentGardPage extends Component
     {
 
         $products = Product::whereHas('collections', function($query){
-            $query->whereIn('lunar_collections.id', [7, 8]); //pilares - cubre pilar
-        })->get();
+            $query->whereIn('lunar_collections.id', [7, 9]); //pilares - cubre pilar
+        })->orderBy('created_at', 'desc')->get();
         return view('livewire.component_gard', ['products' => $products]);
     }
 }
