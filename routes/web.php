@@ -19,6 +19,7 @@ use App\Http\Livewire\CondicionesGeneralPage;
 use App\Http\Livewire\TerminosCondicionPage;
 use App\Http\Livewire\PoliticaCookiesPage;
 use App\Http\Livewire\PoliticaPrivacidadPage;
+use App\Http\Livewire\DecorationJardinPage;
 
 
 use App\Http\Livewire\AboutUsPage;
@@ -68,6 +69,7 @@ Route::get('politica-de-privacidad', PoliticaPrivacidadPage::class)->name('polit
 
 Route::get('condiciones-contrato', CondicionesGeneralPage::class)->name('condiciones_general.view');
 
+Route::get('decoration-jardin', DecorationJardinPage::class)->name('decoration_jardin.view');
 
 Route::get('component-gard', ComponentGardPage::class)->name('component_gard.view');
 
