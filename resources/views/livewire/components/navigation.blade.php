@@ -73,7 +73,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="#">Decoración de jardín</a>
+                                    <a href="/decoration-jardin">Decoración de jardín</a>
                                 </li>
 
                                 <li>
