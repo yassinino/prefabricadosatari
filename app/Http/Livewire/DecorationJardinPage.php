@@ -19,7 +19,7 @@ class DecorationJardinPage extends Component
     {
 
         $products = Product::whereHas('collections', function($query){
-            $query->whereIn('lunar_collections.id', 10); //deco jardin
+            $query->where('lunar_collections.id', 10); //deco jardin
         })->orderBy('created_at', 'desc')->get();
         return view('livewire.decoration_jardin', ['products' => $products]);
     }
