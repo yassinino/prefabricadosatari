@@ -1,4 +1,10 @@
 <span>Precio: </span>
 <span class="price" {{ $attributes }}> <br>
-    Desde {{ $price?->price->formatted() }}
+
+    <?php
+        $prod = Lunar\Models\Product::where('id', $price->priceable->product_id)->first();
+
+        $prod->collections[0]->translateAttribute('name');
+    ?>
+    {{ $prod->collections[0]->translateAttribute('name') == 'Decoration jardin' ? 'Precio unidad' : 'Desde' }} {{ $price?->price->formatted() }}
 </span>

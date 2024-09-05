@@ -55,7 +55,8 @@
                         </div>
                         <h2 class="m-tb10">
                             <x-product-price class="ml-4 font-medium"
-                                     :variant="$this->variant" />
+                                     :variant="$this->variant" 
+                                     :type="$this->product->collections[0]->translateAttribute('name')"/>
                         </h2>
 
 

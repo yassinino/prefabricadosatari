@@ -23,7 +23,7 @@
                                     @forelse($this->collection->products->where('status', 'published') as $product)
 
                                     <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
-                                        <x-product-card :product="$product" />
+                                        <x-product-card :product="$product" :type="$product->collections[0]->translateAttribute('name')"/>
                                     </div>
 
                                     @empty
