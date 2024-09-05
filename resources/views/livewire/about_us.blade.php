@@ -43,8 +43,8 @@
 
                             <div class="col-lg-6 col-md-12 m-b30">
                                 
-                                <video controls="controls" width="800" height="600" name="Video Name" style="width: 100%; height:auto;">
-                                    <source src="{{ url('/images/nosotros/vid_1.mov') }}">
+                                <video controls="controls" width="800" height="600" name="Video Name" style="width: 100%;">
+                                    <source src="{{ url('/videos/work.mov') }}">
                                 </video>
                                                             
                             </div>
