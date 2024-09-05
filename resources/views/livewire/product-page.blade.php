@@ -146,7 +146,9 @@
                         <p style="margin-bottom : 0px!important;">
                         <b>Moderno, duradero y sin mantenimiento.</b> <br>
 
-                            @if(isset($option['option']->translate('dimension'))) * Dimensiones {{  $option['option']->translate('dimension') }} <br> @endif
+                            @if($option['option']->translate('dimension') != '')
+                            * Dimensiones {{  $option['option']->translate('dimension') }} <br> 
+                            @endif
 
                             Ejemplar​ : <br>
                             * Aspecto especial ● Reforzado ● Junta simple ● Una cara <br>
