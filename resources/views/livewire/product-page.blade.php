@@ -180,9 +180,7 @@
                             <br>Paneles con armoniosas formas geométricas o estampados en madera, piedra o ladrillo. 
                             <br>Nuestros paneles se distinguen por su apariencia, textura fina y calidad de producción.
                         </p>
-                       
-                        <livewire:components.add-to-cart :purchasable="$this->variant"
-                                                         :wire:key="$this->variant->id">
+
                     </div>
 
                 </div>
