@@ -13,31 +13,31 @@
                             
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/nosotros/image_1.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/image_1.jpeg') }}" alt="">
                                     </div>
                                 </div>
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/nosotros/image_2.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/image_2.jpeg') }}" alt="">
                                     </div>
                                 </div>
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/nosotros/image_3.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/image_3.jpeg') }}" alt="">
                                     </div>
                                 </div>     
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/nosotros/image_4.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/image_4.jpeg') }}" alt="">
                                     </div>
                                 </div>
 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/nosotros/image_5.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/image_5.jpeg') }}" alt="">
                                     </div>
                                 </div>
                             
