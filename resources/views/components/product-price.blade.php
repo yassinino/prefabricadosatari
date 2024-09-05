@@ -1,4 +1,3 @@
-<span>Precio: </span>
 <span class="price" {{ $attributes }}> <br>
 
     <?php
