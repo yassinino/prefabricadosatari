@@ -13,21 +13,33 @@
                             
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="https://www.konkretline.ro/wp-content/uploads/2024/02/despre-noi-5-jpg.webp" alt="">
+                                        <img src="{{ url('/nosotros/image_1.jpeg') }}" alt="">
                                     </div>
                                 </div>
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="https://www.konkretline.ro/wp-content/uploads/2024/02/despre-noi-8-jpg.webp" alt="">
+                                        <img src="{{ url('/nosotros/image_2.jpeg') }}" alt="">
                                     </div>
                                 </div>
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="https://www.konkretline.ro/wp-content/uploads/2024/02/despre-noi-1-jpg.webp" alt="">
+                                        <img src="{{ url('/nosotros/image_3.jpeg') }}" alt="">
                                     </div>
-                                </div>                                    
+                                </div>     
+                                
+                                <div class="item">
+                                    <div class="aon-thum-bx">
+                                        <img src="{{ url('/nosotros/image_4.jpeg') }}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="aon-thum-bx">
+                                        <img src="{{ url('/nosotros/image_5.jpeg') }}" alt="">
+                                    </div>
+                                </div>
                             
                             </div>
                             <!--fade slider END-->
