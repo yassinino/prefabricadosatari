@@ -146,8 +146,8 @@
                         <p style="margin-bottom : 0px!important;">
                         <b>Moderno, duradero y sin mantenimiento.</b> <br>
 
-                            @if($option['option']->translate('dimension') != '')
-                            * Dimensiones {{  $option['option']->translate('dimension') }} <br> 
+                            @if($this->product->translateAttribute('dimension') != '')
+                            * Dimensiones {{  $this->product->translateAttribute('dimension') }} <br> 
                             @endif
 
                             Ejemplar​ : <br>
