@@ -7,41 +7,48 @@
                     </div>
                     <!-- TITLE END -->                	
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 m-b30">
+                        <div class="col-lg-7 col-md-12 m-b30">
                             <!--Fade slider-->
                             <div class="owl-carousel about-us-carousel owl-btn-vertical-center owl-dots-bottom-center">
-                            
+                                
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/image_1.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_1.jpeg') }}" alt="">
                                     </div>
                                 </div>
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/image_2.jpeg') }}" alt="">
-                                    </div>
-                                </div>
-                                
-                                <div class="item">
-                                    <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/image_3.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_2.jpeg') }}" alt="">
                                     </div>
                                 </div>     
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/image_4.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_3.jpeg') }}" alt="">
                                     </div>
                                 </div>
 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/image_5.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_4.jpeg') }}" alt="">
                                     </div>
                                 </div>
                             
                             </div>
+
+
+                            </div>
+
+
+                            <div class="col-lg-5 col-md-12 m-b30">
+                                
+                                <iframe width="420" height="315"
+                                src="{{ url('/images/nosotros/vid_1.mov') }}">
+                                </iframe>
+                                                            
+                            </div>
+
                             <!--fade slider END-->
                         </div>
 
