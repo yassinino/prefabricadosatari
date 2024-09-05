@@ -5,7 +5,7 @@
                             <div class="col-lg-12 col-md-12"> 
 
                                 <div class="p-b40">
-                                    <h1 class="text-center">Decoratión de jardín</h1>
+                                    <h1 class="text-center">Decoración de jardín</h1>
                                 </div>
                                 
                                 <div class="row product-detail">

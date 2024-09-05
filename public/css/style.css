@@ -10946,6 +10946,10 @@ ol.commentlist li::after {
 	margin-bottom:30px;	
 }
 }
+
+.about-us-carousel .item{
+	height:280px;
+}
 /*------------------------------------- 
 	2. Out Team
 -------------------------------------*/
