@@ -7,7 +7,7 @@
                     </div>
                     <!-- TITLE END -->                	
                     <div class="row">
-                        <div class="col-lg-7 col-md-12 m-b30">
+                        <div class="col-lg-6 col-md-12 m-b30">
                             <!--Fade slider-->
                             <div class="owl-carousel about-us-carousel owl-btn-vertical-center owl-dots-bottom-center">
                                 
@@ -41,11 +41,11 @@
                             </div>
 
 
-                            <div class="col-lg-5 col-md-12 m-b30">
+                            <div class="col-lg-6 col-md-12 m-b30">
                                 
-                                <iframe width="420" height="315"
-                                src="{{ url('/images/nosotros/vid_1.mov') }}">
-                                </iframe>
+                                <video controls="controls" width="800" height="600" name="Video Name" style="width: 100%; height:auto;">
+                                    <source src="{{ url('/images/nosotros/vid_1.mov') }}">
+                                </video>
                                                             
                             </div>
 
