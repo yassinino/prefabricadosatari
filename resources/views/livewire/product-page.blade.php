@@ -51,7 +51,11 @@
                             @endif
                         
                         </a></h3>
-                            <p>{{  $this->product->collections[0]->translateAttribute('name') }}</p>
+                            <p>
+                                @foreach($this->mycollections as $col)
+                                - {{  $col }} 
+                                @endforeach
+                            </p>
                         </div>
                         <h2 class="m-tb10">
                             <x-product-price class="ml-4 font-medium"
