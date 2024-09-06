@@ -113,6 +113,19 @@
 
                         </p>
 
+                        @elseif(in_array('Doble cara', $this->mycollections))
+
+
+                        <p style="margin-bottom : 0px!important;">
+                        <b>Moderno, duradero y sin mantenimiento.</b> <br>
+                            @if(isset($this->dimension)) * Dimensiones {{  $this->dimension->translate('name') }} <br> @endif
+                            Ejemplar​ : <br>
+                            * Aspecto especial ● Reforzado ● Junta simple ● @if(isset($this->dimension))  {{  $this->dimension->translate('name') }} <br> @endif
+
+                            * Descripción {!! $this->product->translateAttribute('description') !!}
+
+                        </p>
+
                       
                         @elseif(in_array(8, $this->product->collections->pluck('id')->toArray()))
 
@@ -157,18 +170,7 @@
 
                         </p>
 
-                        @elseif(in_array('Doble cara', $this->mycollections))
 
-
-                        <p style="margin-bottom : 0px!important;">
-                        <b>Moderno, duradero y sin mantenimiento.</b> <br>
-                            @if(isset($this->dimension)) * Dimensiones {{  $this->dimension->translate('name') }} <br> @endif
-                            Ejemplar​ : <br>
-                            * Aspecto especial ● Reforzado ● Junta simple ● @if(isset($this->dimension))  {{  $this->dimension->translate('name') }} <br> @endif
-
-                            * Descripción {!! $this->product->translateAttribute('description') !!}
-
-                        </p>
 
                         @else
 
