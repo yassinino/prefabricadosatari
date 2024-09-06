@@ -153,11 +153,25 @@ class ProductPage extends Component
     }
 
 
+    public function getMycollectionsProperty(){
+        $m_arrays = [];
+        $arrays = $this->product->collections;
+
+        foreach ($arrays as $key => $collection) {
+            $m_arrays[$key] = $collection->translateAttribute('name');
+        }
+
+        return $m_arrays;
+
+    }
+
+
     /**
      * {@inheritDoc}
      */
     public function render()
     {
+
         return view('livewire.product-page');
     }
 }
