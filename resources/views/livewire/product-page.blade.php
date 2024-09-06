@@ -141,6 +141,19 @@
 
                         </p>
 
+                        @elseif($this->product->collections[0]->translateAttribute('name') == 'Doble cara')
+
+
+                        <p style="margin-bottom : 0px!important;">
+                        <b>Moderno, duradero y sin mantenimiento.</b> <br>
+                            @if(isset($this->dimension)) * Dimensiones {{  $this->dimension->translate('name') }} <br> @endif
+                            Ejemplar​ : <br>
+                            * Aspecto especial ● Reforzado ● Junta simple ● @if(isset($this->dimension))  {{  $this->dimension->translate('name') }} <br> @endif
+
+                            * Descripción {!! $this->product->translateAttribute('description') !!}
+
+                        </p>
+
                         @elseif($this->product->collections[0]->translateAttribute('name') == 'Decoration jardin')
 
                         <p style="margin-bottom : 0px!important;">

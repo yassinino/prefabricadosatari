@@ -60,7 +60,7 @@
                                             <a href="/vallas/paneles-medida-especial">Paneles medida especial</a>
                                         </li>
                                         <li>
-                                            <a href="/double-cara">Valla a doble cara</a>
+                                            <a href="/vallas/double-cara">Valla a doble cara</a>
                                         </li>
                                     </ul>
                                 </li>
