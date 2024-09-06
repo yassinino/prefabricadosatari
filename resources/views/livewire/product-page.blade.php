@@ -118,7 +118,8 @@
 
                         <p style="margin-bottom : 0px!important;">
                         <b>Moderno, duradero y sin mantenimiento.</b> <br>
-                            @if(isset($this->dimension)) * Dimensiones {{  $this->dimension->translate('name') }} <br> @endif
+                            * Peso 50 Kg <br>
+                            * Dimensiones 200 × 30 × 4 cm <br>
                             Ejemplar​ : <br>
                             * Aspecto especial ● Reforzado ● Junta simple ● @if(isset($this->dimension))  {{  $this->dimension->translate('name') }} <br> @endif
 
