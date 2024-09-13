@@ -12,7 +12,7 @@
                             <div class="item">
                                     <div class="mfp-gallery">
                                         <div class="wt-box">
-                                            <div class="wt-thum-bx wt-img-overlay1 " wire:key="image_{{ $image->id }}">
+                                            <div class="wt-thum-bx wt-img-overlay1" wire:key="image_{{ $image->id }}">
                                                 <img src="{{ $image->getUrl('large') }}" alt="{{ $this->product->translateAttribute('name') }}">
                                                 <div class="overlay-bx">
                                                     <div class="overlay-icon">
@@ -53,7 +53,7 @@
                         </a></h3>
                             <p>
                                 @foreach($this->mycollections as $col)
-                                - {{  $col }} 
+                                - {{  $col }}
                                 @endforeach
                             </p>
                         </div>
@@ -84,7 +84,7 @@
                                      >
                                     
 
-                                        <select class="form-control" wire:model="selectedOptionValues.{{ $option['option']->id }}">
+                                        <select class="form-control arrow" wire:model="selectedOptionValues.{{ $option['option']->id }}">
 
                                             @foreach ($option['values'] as $key => $value)
                                             <option value="{{ $value->id }}" wire:key="{{ $key }}">{{ $value->translate('name') }}</option>
@@ -195,7 +195,7 @@
 
                         
                         <p>
-                        <b>Vallas prefabricadas de hormigón o mármol recompuesto.</b> <br>
+                            <b>Vallas prefabricadas de hormigón o mármol recompuesto.</b> <br>
                             Vallas prefabricadas de hormigón de la marca Prefabricados Atari SL, que destacan por su depurado diseño, de líneas claras y limpias.
                             <br>Paneles con armoniosas formas geométricas o estampados en madera, piedra o ladrillo. 
                             <br>Nuestros paneles se distinguen por su apariencia, textura fina y calidad de producción.
@@ -233,3 +233,108 @@
         </div>
     </div>
 
+    <script>
+    document.addEventListener('livewire:load', function () {
+        // Function to initialize the charts
+        function initCharts() {
+
+            var sync1 = $("#sync1");
+            var sync2 = $("#sync2");
+            var slidesPerPage = 4; //globaly define number of elements per page
+            var syncedSecondary = true;
+
+            sync1.trigger('destroy.owl.carousel');
+
+            sync1.owlCarousel({
+                items : 1,
+                slideSpeed : 2000,
+                nav: true,
+                autoplay: false,
+                dots: false,
+                loop: true,
+                responsiveRefreshRate : 200,
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+            }).on('changed.owl.carousel', syncPosition);
+
+
+            sync2.trigger('destroy.owl.carousel');
+
+
+            sync2
+                .on('initialized.owl.carousel', function () {
+                sync2.find(".owl-item").eq(0).addClass("current");
+                })
+                .owlCarousel({
+                items : slidesPerPage,
+                dots: false,
+                nav: false,
+                margin:5,
+                smartSpeed: 200,
+                slideSpeed : 500,
+                slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+                responsiveRefreshRate : 100
+            }).on('changed.owl.carousel', syncPosition2);
+
+
+            function syncPosition(el) {
+                //if you set loop to false, you have to restore this next line
+                //var current = el.item.index;
+                
+                //if you disable loop you have to comment this block
+                var count = el.item.count-1;
+                var current = Math.round(el.item.index - (el.item.count/2) - .5);
+                
+                if(current < 0) {
+                current = count;
+                }
+                if(current > count) {
+                current = 0;
+                }
+                
+                //end block
+
+                sync2
+                .find(".owl-item")
+                .removeClass("current")
+                .eq(current)
+                .addClass("current");
+                var onscreen = sync2.find('.owl-item.active').length - 1;
+                var start = sync2.find('.owl-item.active').first().index();
+                var end = sync2.find('.owl-item.active').last().index();
+                
+                if (current > end) {
+                sync2.data('owl.carousel').to(current, 100, true);
+                }
+                if (current < start) {
+                sync2.data('owl.carousel').to(current - onscreen, 100, true);
+                }
+            }
+            
+            function syncPosition2(el) {
+                if(syncedSecondary) {
+                var number = el.item.index;
+                sync1.data('owl.carousel').to(number, 100, true);
+                }
+            }
+            
+            sync2.on("click", ".owl-item", function(e){
+                e.preventDefault();
+                var number = $(this).index();
+                sync1.data('owl.carousel').to(number, 300, true);
+            });
+
+
+
+
+        }
+
+        // Initialize the charts on page load
+        initCharts();
+
+
+        // Reinitialize the charts after Livewire updates
+        Livewire.hook('message.processed', (message, component) => {
+            initCharts();
+        });
+    });
+</script>
