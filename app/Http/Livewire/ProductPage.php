@@ -6,6 +6,7 @@ use App\Traits\FetchesUrls;
 use Livewire\Component;
 use Livewire\ComponentConcerns\PerformsRedirects;
 use Lunar\Models\Product;
+use Lunar\Models\Discount;
 
 class ProductPage extends Component
 {

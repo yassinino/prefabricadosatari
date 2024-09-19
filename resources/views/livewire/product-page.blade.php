@@ -196,7 +196,7 @@
                         
                         <p>
                             <b>Vallas prefabricadas de hormigón o mármol recompuesto.</b> <br>
-                            Vallas prefabricadas de hormigón de la marca Prefabricados Atari SL, que destacan por su depurado diseño, de líneas claras y limpias.
+                               Vallas prefabricadas de hormigón de la marca Prefabricados Atari SL, que destacan por su depurado diseño, de líneas claras y limpias.
                             <br>Paneles con armoniosas formas geométricas o estampados en madera, piedra o ladrillo. 
                             <br>Nuestros paneles se distinguen por su apariencia, textura fina y calidad de producción.
                         </p>
