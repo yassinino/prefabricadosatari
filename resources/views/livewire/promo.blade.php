@@ -3,7 +3,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="wt-box col-xl-12 col-lg-12 col-md-12 m-b30 p-t40 mt-40">
-                                <h4 style="font-size : 30px; text-align:center;line-height: 2em; ">DURANTE EL MES DE SETEMBRE / OCTOBRE TODOS NUESTROS PRODUCTOS TENEN 50% DE DESCUENTO.</h4>
+                                <h4 style="font-size : 30px; text-align:center;line-height: 2em; ">DURANTE EL MES DE SETEMBRE TODOS NUESTROS PRODUCTOS TENEN 50% DE DESCUENTO.</h4>
                         </div>
  
                     </div>
