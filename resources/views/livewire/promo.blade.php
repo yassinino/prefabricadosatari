@@ -12,7 +12,7 @@
                             <div class="col-lg-12 col-md-12"> 
 
                                 <div class="p-b40">
-                                    <h1 class="text-center">Vallas / Todo los modelos</h1>
+                                    <h1 class="text-center">Todo los promotiones</h1>
                                 </div>
                                 
                                 <div class="row product-detail">
