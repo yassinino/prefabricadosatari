@@ -5,9 +5,9 @@
                             <div class="col-lg-12 col-md-12"> 
 
                                 <div class="p-b40">
-                                    <h1 class="text-center">Search Results
+                                    <h1 class="text-center">Resultados de la búsqueda
                                         @if (isset($term))
-                                            for <u>{{ $term }}</u>
+                                            para <u>{{ $term }}</u>
                                         @endif
                                     </h1>
                                 </div>
