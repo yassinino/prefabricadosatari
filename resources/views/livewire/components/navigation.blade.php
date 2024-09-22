@@ -106,6 +106,10 @@
                         @livewire('components.cart')
 
                             <div class="extra-cell">
+                                <a href="#search" class="site-search-btn"><i class="fa fa-search"></i></a>
+                            </div>
+
+                            <div class="extra-cell">
                                  <a href="{{ url('/contact') }}" class="contact-button">Contacto</a>
                             </div>
                          </div>
@@ -121,7 +125,7 @@
                             <span class="close"></span>
                             <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
                                 <div class="input-group">
-                                    <input value="" name="q" type="search" placeholder="Type to search">
+                                    <input value="" name="term" type="search" placeholder="Type to search">
                                     <span class="input-group-btn"><button type="button" class="search-btn"><i class="fa fa-search"></i></button></span>
                                 </div>   
                             </form>

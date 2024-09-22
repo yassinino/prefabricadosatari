@@ -19,7 +19,7 @@
 
                                 @if ($this->cart)
                                         @if ($lines)
-                                        
+
                                             <div class="nav-cart-items p-a15">
 
                                             @foreach ($lines as $index => $line)
@@ -32,7 +32,48 @@
                                                         <small>{{ $line['identifier'] }} / {{ $line['options'] }}</small>
                                                         <span class="nav-cart-item-price">
                                                         <input id="demo_vertical2" class="form-control" type="number" wire:model="lines.{{ $index }}.quantity" />
-                                                        x {{ $line['unit_price'] }}</span>
+                                                        x 
+
+                                                        <?php
+                                                            $prod = Lunar\Models\ProductVariant::where('sku', $line['identifier'])->first()->product;
+
+                                                            $prod->collections[0]->translateAttribute('name');
+
+                                                            $product_collections = $prod->collections->pluck('id');
+
+                                                            $dic_col = \DB::table('lunar_collection_discount')
+                                                            ->leftJoin('lunar_discounts', 'lunar_discounts.id', 'lunar_collection_discount.discount_id')
+                                                            ->where('lunar_discounts.priority', 10)
+                                                            ->whereIn('collection_id', $product_collections)->first();
+
+                                                            if(isset($dic_col)){
+                                                                $discount = Lunar\Models\Discount::find($dic_col->discount_id)->toArray();
+                                                                $percentage = $discount['data']['percentage'];
+                                                                $old_price = $prod->prices->first()->price->decimal();
+                                                                $currency = $prod->prices->first()->price->currency->code;
+
+                                                                $locale='en-US'; //browser or user locale
+                                                                $fmt = new NumberFormatter( $locale."@currency=$currency", NumberFormatter::CURRENCY );
+                                                                $symbol = $fmt->getSymbol(NumberFormatter::CURRENCY_SYMBOL);
+
+                                                                $price = $symbol .$old_price - (($old_price * $percentage) / 100);
+
+                                                            }else{
+                                                               $price = $line['unit_price'];
+                                                            }
+                                                        ?>
+                                                        
+                                                        @if(isset($dic_col))
+
+                                                        <span style="text-decoration: line-through;">{{ $symbol . $old_price }}</span> {{ $price }}
+
+                                                        @else
+
+                                                        {{ $price }}
+
+                                                        @endif
+                                                    
+                                                        </span>
                                                         <a href="#" class="nav-cart-item-quantity"
                                                         wire:click.prevent="removeLine('{{ $line['id'] }}')">x</a>
                                                     </div>
@@ -43,17 +84,27 @@
 
                                         @else
                                             <p class="py-4 text-sm font-medium text-center text-gray-500">
-                                                Your cart is empty
+                                                El carrito está vacío
                                             </p>
                                         @endif
 
-                                    <div class="nav-cart-title p-tb10 p-lr15 clearfix">
-                                        <h4  class="pull-left m-a0">Subtotal:</h4>
-                                        <h5 class="pull-right m-a0">{{ $this->cart->subTotal->formatted() }}</h5>
-                                    </div>
+                                        @if( count($this->cart->discounts) > 0)
+                                        <div class="nav-cart-title p-tb10 p-lr15 clearfix">
+                                            <h4  class="pull-left m-a0">Subtotal:</h4>
+                                            <h5 class="pull-right m-a0">{{ $this->cart->subTotalDiscounted->formatted() }}</h5>
+                                        </div>
+                                        @else
+
+                                        <div class="nav-cart-title p-tb10 p-lr15 clearfix">
+                                            <h4  class="pull-left m-a0">Subtotal:</h4>
+                                            <h5 class="pull-right m-a0">{{ $this->cart->subTotal->formatted() }}</h5>
+                                        </div>
+
+                                        @endif
+
                                     @else
                                         <p class="py-4 text-sm font-medium text-center text-gray-500">
-                                            Tu Cesta esta vacío
+                                            El carrito está vacío
                                         </p>
                                     @endif
 
@@ -67,7 +118,7 @@
 
                                             <a class="site-button  btn-block"
                                             href="{{ route('checkout.view') }}">
-                                                Cesta
+                                                Carrito
                                             </a>
                                         </div>
                                     @endif

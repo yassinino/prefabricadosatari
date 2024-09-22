@@ -5,7 +5,7 @@ namespace App\Http\Livewire\Components;
 use Livewire\Component;
 use Lunar\Base\Purchasable;
 use Lunar\Facades\CartSession;
-
+use Lunar\Facades\Discounts;
 class AddToCart extends Component
 {
     /**
@@ -37,11 +37,28 @@ class AddToCart extends Component
         $this->validate();
 
         if ($this->purchasable->stock < $this->quantity) {
-            $this->addError('quantity', 'The quantity exceeds the available stock.');
+            $this->addError('quantity', 'La cantidad excede el stock disponible.');
             return;
         }
 
         CartSession::manager()->add($this->purchasable, $this->quantity);
+
+
+        $cart = CartSession::current();
+        $discount = 'promo';
+
+
+        if (Discounts::validateCoupon($discount)) {
+
+                $cart->coupon_code = $discount;
+                $cart->save();
+                $cart->calculate();
+
+            Discounts::resetDiscounts();
+
+        }
+
+
         $this->emit('add-to-cart');
     }
 

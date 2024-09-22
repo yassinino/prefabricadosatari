@@ -17,22 +17,13 @@ class ShippingModifier
 
         ShippingManifest::addOption(
             new ShippingOption(
-                name: 'Basic Delivery',
-                description: 'Basic Delivery',
+                name: 'Envio España',
+                description: 'Envio España',
                 identifier: 'BASDEL',
-                price: new Price(500, $cart->currency, 1),
+                price: new Price(1500, $cart->currency, 1),
                 taxClass: $taxClass
             )
         );
 
-        ShippingManifest::addOption(
-            new ShippingOption(
-                name: 'Express Delivery',
-                description: 'Express Delivery',
-                identifier: 'EXPDEL',
-                price: new Price(1000, $cart->currency, 1),
-                taxClass: $taxClass
-            )
-        );
     }
 }

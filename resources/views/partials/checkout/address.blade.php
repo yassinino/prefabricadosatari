@@ -1,17 +1,32 @@
+<div class="card mb-2">
+  <div class="card-header">
+    Detalles de envío 
+
+    @if ($currentStep > $step)
+        <button type="button" 
+        wire:click.prevent="$set('currentStep', {{ $step }})"
+        class="site-button" style="float: right;">Cambiar</button>
+
+    @endif
+
+  </div>
+
 <form wire:submit.prevent="saveAddress('{{ $type }}')">
 
 @if ($currentStep >= $step)
+
+<div class="card-body">
 
                     @if ($step == $currentStep)
                                     
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>First Name *</label>
+                                                <label>Nombre *</label>
                                                 <input 
                                                 type="text" 
                                                 class="form-control"  
-                                                placeholder="First Name"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.first_name')"
                                                 wire:model.defer="{{ $type }}.first_name"
                                                 required
@@ -20,11 +35,11 @@
                                         </div>
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>Last Name *</label>
+                                                <label>Apellido *</label>
                                                 <input 
                                                 type="text" 
                                                 class="form-control"  
-                                                placeholder="Last Name"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.last_name')"
                                                 wire:model.defer="{{ $type }}.last_name"
                                                 required
@@ -34,11 +49,11 @@
                                     </div>
                                     
                                     <div class="form-group">
-                                        <label>Company Name *</label>
+                                        <label>Empreza *</label>
                                         <input 
                                         type="text" 
                                         class="form-control" 
-                                        placeholder="Company Name"
+                                        placeholder=""
                                         :errors="$errors->get($type . '.company_name')"
                                         wire:model.defer="{{ $type }}.company_name"
                                         >
@@ -47,11 +62,11 @@
                                     <div class="row">
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>Phone</label>
+                                                <label>Teléfono</label>
                                                 <input 
                                                 type="text" 
                                                 class="form-control"  
-                                                placeholder="Enter Phone Number"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.contact_phone')"
                                                 wire:model.defer="{{ $type }}.contact_phone"
                                                 >
@@ -59,11 +74,11 @@
                                         </div>
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>Email Address</label>
+                                                <label>Correo</label>
                                                 <input 
                                                 type="email" 
                                                 class="form-control"  
-                                                placeholder="Enter email"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.contact_email')"
                                                 wire:model.defer="{{ $type }}.contact_email"
                                                 required
@@ -74,12 +89,12 @@
 
 
                                     <div class="form-group row">
-                                        <label>Address</label>
+                                        <label>Dirección</label>
                                             <div class="col-md-6 col-sm-6">
                                                 <input 
                                                 type="text" 
                                                 class="form-control m-b30"  
-                                                placeholder="Address 1"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.line_one')"
                                                 wire:model.defer="{{ $type }}.line_one"
                                                 required
@@ -90,7 +105,7 @@
                                                 <input 
                                                 type="text" 
                                                 class="form-control m-b30"  
-                                                placeholder="Address 2"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.line_two')"
                                                 wire:model.defer="{{ $type }}.line_two"
                                                 >
@@ -104,11 +119,11 @@
 
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>City</label>
+                                                <label>Ciudad</label>
                                                 <input 
                                                 type="text" 
                                                 class="form-control m-b30"  
-                                                placeholder="City"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.city')"
                                                 wire:model.defer="{{ $type }}.city"
                                                 required
@@ -118,11 +133,11 @@
 
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>State / Province</label>
+                                                <label>Región</label>
                                                 <input 
                                                 type="text" 
                                                 class="form-control m-b30"  
-                                                placeholder="State / Province"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.state')"
                                                 wire:model.defer="{{ $type }}.state"
 
@@ -133,11 +148,11 @@
 
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>Postcode</label>
+                                                <label>Código postal</label>
                                                 <input 
                                                 type="text" 
                                                 class="form-control m-b30"  
-                                                placeholder="Address 1"
+                                                placeholder=""
                                                 :errors="$errors->get($type . '.postcode')"
                                                 wire:model.defer="{{ $type }}.postcode"
                                                 required
@@ -147,8 +162,11 @@
 
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
-                                                <label>Country</label>
-                                                <select class="form-control selectpicker" wire:model.defer="{{ $type }}.country_id" required>
+                                                <label>País/región</label>
+                                                <select class="form-control" wire:model.defer="{{ $type }}.country_id" required>
+                                                        <option value="--" wire:key="0">
+                                                           Eligir País
+                                                        </option disabled>
                                                     @foreach ($this->countries as $country)
                                                         <option value="{{ $country->id }}"
                                                                 wire:key="country_{{ $country->id }}">
@@ -169,29 +187,21 @@
                                                 value="1"
                                                 wire:model.defer="shippingIsBilling"
                                                 type="checkbox">
-                                                <label for="checkmeout1">Same as billing</label>
+                                                <label for="checkmeout1">Lo mismo que la facturación</label>
                                             </div>
                                         </div>
                                         @endif
 
 
-                                        @if ($currentStep > $step)
-                                            <button type="button"
-                                                    wire:click.prevent="$set('currentStep', {{ $step }})"
-                                                    class="site-button">Edit</button>
-
-                                        @endif
-
-            
 
 
                             @elseif($currentStep > $step)
-                                    <dl class="grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-                                        <div>
-                                            <div class="space-y-4">
+                                    <h3>Detalles de envío</h3>
+                                        <div class="row">
+                                            <div class="col-md-6">
                                                 <div>
                                                     <dt class="font-medium">
-                                                        Name
+                                                        Nombre completo
                                                     </dt>
 
                                                     <dd class="mt-0.5">
@@ -199,22 +209,10 @@
                                                     </dd>
                                                 </div>
 
-                                                @if ($this->{$type}->company_name)
-                                                    <div>
-                                                        <dt class="font-medium">
-                                                            Company
-                                                        </dt>
-
-                                                        <dd class="mt-0.5">
-                                                            {{ $this->{$type}->company_name }}
-                                                        </dd>
-                                                    </div>
-                                                @endif
-
                                                 @if ($this->{$type}->contact_phone)
                                                     <div>
                                                         <dt class="font-medium">
-                                                            Phone Number
+                                                            Teléfono
                                                         </dt>
 
                                                         <dd class="mt-0.5">
@@ -225,7 +223,7 @@
 
                                                 <div>
                                                     <dt class="font-medium">
-                                                        Email
+                                                        Correo
                                                     </dt>
 
                                                     <dd class="mt-0.5">
@@ -233,32 +231,32 @@
                                                     </dd>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div>
-                                            <dt class="font-medium">
-                                                Address
-                                            </dt>
+                                            <div class="col-md-6">
+                                                <dt class="font-medium">
+                                                    Dirección
+                                                </dt>
 
-                                            <dd class="mt-0.5">
-                                                {{ $this->{$type}->line_one }}<br>
-                                                @if ($this->{$type}->line_two)
-                                                    {{ $this->{$type}->line_two }}<br>
-                                                @endif
-                                                @if ($this->{$type}->line_three)
-                                                    {{ $this->{$type}->line_three }}<br>
-                                                @endif
-                                                @if ($this->{$type}->city)
-                                                    {{ $this->{$type}->city }}<br>
-                                                @endif
-                                                @if ($this->{$type}->state)
-                                                    {{ $this->{$type}->state }}<br>
-                                                @endif
-                                                {{ $this->{$type}->postcode }}<br>
-                                                {{ $this->{$type}->country?->native }}
-                                            </dd>
+                                                <dd class="mt-0.5">
+                                                    {{ $this->{$type}->line_one }}<br>
+                                                    @if ($this->{$type}->line_two)
+                                                        {{ $this->{$type}->line_two }}<br>
+                                                    @endif
+                                                    @if ($this->{$type}->line_three)
+                                                        {{ $this->{$type}->line_three }}<br>
+                                                    @endif
+                                                    @if ($this->{$type}->city)
+                                                        {{ $this->{$type}->city }}<br>
+                                                    @endif
+                                                    @if ($this->{$type}->state)
+                                                        {{ $this->{$type}->state }}<br>
+                                                    @endif
+                                                    {{ $this->{$type}->postcode }}<br>
+                                                    {{ $this->{$type}->country?->native }}
+                                                </dd>
+                                            </div>
+
                                         </div>
-                                    </dl>
                             @endif
 
 
@@ -271,7 +269,7 @@
                                                     wire:target="saveAddress">
                                                 <span wire:loading.remove
                                                     wire:target="saveAddress">
-                                                    Save Address
+                                                    Guardar y continuar
                                                 </span>
 
                                                 <span wire:loading
@@ -285,6 +283,11 @@
                                             </button>
                                         </div>
                                     @endif
+</div>
+
 @endif
 </form>
+
+
+</div>
 

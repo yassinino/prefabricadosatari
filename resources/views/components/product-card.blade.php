@@ -23,7 +23,7 @@
                                         {!! strlen($product->translateAttribute('description')) > 100 ? substr($product->translateAttribute('description'),0,100)."..." : $product->translateAttribute('description');  !!}
 
                                     </p>
-                                    <x-product-price :product="$product" :type="$product->collections[0]->translateAttribute('name')"/>
+                                    <x-product-price :product="$product"/>
 
                                     <div>
                                     <a href="{{ route('product.view', $product->defaultUrl->slug) }}" class="m-b5 mt-3 output-button" type="button">

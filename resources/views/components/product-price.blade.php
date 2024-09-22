@@ -9,7 +9,7 @@
 
         $dic_col = \DB::table('lunar_collection_discount')
         ->leftJoin('lunar_discounts', 'lunar_discounts.id', 'lunar_collection_discount.discount_id')
-        ->where('lunar_discounts.priority', 1)
+        ->where('lunar_discounts.priority', 10)
         ->whereIn('collection_id', $product_collections)->first();
 
         if(isset($dic_col)){
@@ -45,4 +45,5 @@
     {{ $price }}
 
     @endif
+
 </span>

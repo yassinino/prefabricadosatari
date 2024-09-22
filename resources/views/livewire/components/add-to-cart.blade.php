@@ -1,4 +1,3 @@
-
 <div class="cart">
                             <div class="quantity btn-quantity pull-left m-r10" >
                                 <input id="quantity" type="number" value="1" class="form-control" wire:model="quantity">

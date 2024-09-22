@@ -43,7 +43,7 @@
                         <!-- FROM STYEL 1 WITH ICON -->
                         <div class="col-md-6 m-b30">
                             <div class="section-head">
-                                <h2 class="text-uppercase">Your Order</h2>
+                                <h2 class="text-uppercase">Resumen del pedido</h2>
                                 <div class="wt-separator-outer">
                                     <div class="wt-separator style-square">
                                         <span class="separator-left site-bg-primary"></span>
@@ -54,20 +54,69 @@
                             <div class="wt-box your-order-list">
                                 <ul>
 
+                                
+      
                                 @foreach ($cart->lines as $line)
 
                                 <li wire:key="cart_line_{{ $line->id }}">
                                     <!-- <img class="img thumbnail" src="{{ $line->purchasable->getThumbnail()->getUrl() }}" />  -->
                                 {{ $line->purchasable->getDescription() }}
-                                    <strong class="pull-right site-text-primary">{{ $line->quantity }} x {{ $line->subTotal->formatted() }}</strong>
+                                    <strong class="pull-right site-text-primary">{{ $line->quantity }} x 
+
+                                    @if( count($this->cart->discounts) > 0)
+                                       
+                                    <?php
+                                                $prod = Lunar\Models\ProductVariant::where('id', $line->purchasable_id)->first()->product;
+
+                                                            $prod->collections[0]->translateAttribute('name');
+
+                                                            $product_collections = $prod->collections->pluck('id');
+
+                                                            $dic_col = \DB::table('lunar_collection_discount')
+                                                            ->leftJoin('lunar_discounts', 'lunar_discounts.id', 'lunar_collection_discount.discount_id')
+                                                            ->where('lunar_discounts.priority', 10)
+                                                            ->whereIn('collection_id', $product_collections)->first();
+
+                                                            if(isset($dic_col)){
+                                                                $discount = Lunar\Models\Discount::find($dic_col->discount_id)->toArray();
+                                                                $percentage = $discount['data']['percentage'];
+                                                                $old_price = $prod->prices->first()->price->decimal();
+                                                                $currency = $prod->prices->first()->price->currency->code;
+
+                                                                $locale='en-US'; //browser or user locale
+                                                                $fmt = new NumberFormatter( $locale."@currency=$currency", NumberFormatter::CURRENCY );
+                                                                $symbol = $fmt->getSymbol(NumberFormatter::CURRENCY_SYMBOL);
+
+                                                                $price = $symbol .$old_price - (($old_price * $percentage) / 100);
+
+                                                            }else{
+                                                               $price = $line->unitPrice->formatted();
+                                                            }
+                                                        ?>
+
+                                                        {{ $price }}
+
+
+                                    @else
+
+                                    {{ $line->unitPrice->formatted() }}
+
+                                    @endif
+                                    </strong>
                                 </li>
 
                                 @endforeach
 
-                                <li><b> Cart Subtotal</b><strong class="pull-right site-text-primary">{{ $cart->subTotal->formatted() }}</strong></li>
-                                @if ($this->shippingOption)
-                                <li><b> {{ $this->shippingOption->getDescription() }}</b><strong class="pull-right site-text-primary">{{ $this->shippingOption->getPrice()->formatted() }}</strong></li>
+
+                                @if( count($this->cart->discounts) > 0)
+                                    <li><b> Cart Subtotal</b><strong class="pull-right site-text-primary">{{ $cart->subTotalDiscounted->formatted() }}</strong></li>
+                                @else
+                                    <li><b> Cart Subtotal</b><strong class="pull-right site-text-primary">{{ $cart->subTotal->formatted() }}</strong></li>
                                 @endif
+
+                                @if ($this->shippingOption)
+                                    <li><b> {{ $this->shippingOption->getDescription() }}</b><strong class="pull-right site-text-primary">{{ $this->shippingOption->getPrice()->formatted() }}</strong></li>
+                                    @endif
 
 
                                 @foreach ($cart->taxBreakdown->amounts as $tax)

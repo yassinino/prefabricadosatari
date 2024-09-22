@@ -27,6 +27,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(ShippingModifiers $shippingModifiers)
     {
 
+        
         $slot = Menu::slot('sidebar');
 
         $slot->addItem(function ($item) {
