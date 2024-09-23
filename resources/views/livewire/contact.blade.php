@@ -5,7 +5,7 @@
                 <div class="contact-left-part">
                     <div class="gmap-outline">
                         <div id="gmap_canvas" class="google-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12024.62023932914!2d1.1526778!3d41.1093045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a159e0c93fbe41%3A0xa8a4745128cdc341!2sMontajes%20Atari%2C%20S.L.%20-%20Reformas%20y%20Fachadas%20en%20Vila-seca%20(Tarragona)!5e0!3m2!1sfr!2sus!4v1711446191006!5m2!1sfr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=41.132001,1.040794+(Prefabricadosatari)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
