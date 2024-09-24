@@ -25,7 +25,7 @@
                        </div>
                         <div class="row">
                         
-                            <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+                            <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
                                     <div class="wt-icon-box-wraper center p-a30 bdr-2 bdr-gray-light">
                                         <div class="wt-icon-box-sm site-bg-primary m-b20">
                                             <span class="icon-cell text-white">
@@ -39,7 +39,7 @@
                                     </div>
                             </div>
                             
-                            <div class="col-lg-4 col-md-6 col-sm-6 m-b30">
+                            <div class="col-lg-6 col-md-6 col-sm-6 m-b30">
                                 <div class="wt-icon-box-wraper center p-a30 bdr-2 bdr-gray-light">
                                     <div class="wt-icon-box-sm site-bg-primary m-b20">
                                         <span class="icon-cell text-white">
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                             
-                            <div class="col-lg-4 col-md-12 col-sm-12 m-b30">
+                            <div class="col-lg-12 col-md-12 col-sm-12 m-b30">
                                 <div class="wt-icon-box-wraper center p-a30 bdr-2 bdr-gray-light">
                                     <div class="wt-icon-box-sm site-bg-primary m-b20">
                                         <span class="icon-cell text-white">
@@ -115,7 +115,7 @@
                                 </div>
 
                                 <div class="col-md-12 text-right">
-                                    <button name="submit" type="submit" value="Submit" class="site-button  m-r15">Submit  <i class="fa fa-angle-double-right"></i></button>
+                                    <button name="submit" type="submit" value="Submit" class="site-button  m-r15">Enviar  <i class="fa fa-angle-double-right"></i></button>
                                 </div>
 
                             </div>
