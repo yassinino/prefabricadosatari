@@ -27,14 +27,14 @@
                     <div class="portfolio-wrap mfp-gallery no-col-gap row">
                     
                     @for($i = 1; $i <= 50 ; $i++)
-                        <div class="masonry-item cat-1 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="masonry-item cat-1 col-lg-3 col-md-3 col-sm-6 col-xs-6">
                             <div class="wt-gallery-bx p-a15">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
                                     <a href="portfolio-detail.html">
                                         @if($i <= 14)
-                                        <img src="{{ url('images/galeries/image_'.$i.'.jpeg') }}"  alt="" style="height: 500px!important;">
+                                        <img src="{{ url('images/galeries/image_'.$i.'.jpeg') }}"  alt="" style="height: 350px!important;">
                                         @else
-                                        <img src="{{ url('images/galeries/image_'.$i.'.jpg') }}"  alt="" style="height: 500px!important;">
+                                        <img src="{{ url('images/galeries/image_'.$i.'.jpg') }}"  alt="" style="height: 350px!important;">
 
                                         @endif
                                     </a>
