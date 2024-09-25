@@ -7,7 +7,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1"
     >
-    <title>Montajes</title>
+    <title>Prefabricadosatari</title>
     <meta
         name="description"
         content="Example of an ecommerce storefront built with Lunar."

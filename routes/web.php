@@ -7,6 +7,9 @@ use App\Http\Livewire\Home;
 use App\Http\Livewire\ProductPage;
 use App\Http\Livewire\SearchPage;
 use App\Http\Livewire\ContactPage;
+use App\Http\Livewire\InfoPage;
+use App\Http\Livewire\InstalacionVallaPage;
+use App\Http\Livewire\PedirVallaPage;
 use App\Http\Livewire\VallasPage;
 use App\Http\Livewire\AllModelsPage;
 use App\Http\Livewire\ComponentGardPage;
@@ -50,6 +53,12 @@ Route::get('search', SearchPage::class)->name('search.view');
 Route::get('checkout', CheckoutPage::class)->name('checkout.view');
 
 Route::get('contact', ContactPage::class)->name('contact.view');
+
+Route::get('info', InfoPage::class)->name('info.view');
+
+Route::get('instalacion-de-valla', InstalacionVallaPage::class)->name('instalacion.view');
+
+Route::get('pedir-valla', PedirVallaPage::class)->name('pedir.view');
 
 Route::get('vallas/{slug}', VallasPage::class)->name('vallas.view');
 

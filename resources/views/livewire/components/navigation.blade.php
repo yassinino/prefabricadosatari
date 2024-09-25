@@ -77,7 +77,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="#">Info</a>
+                                    <a href="/info">Info</a>
                                 </li>
 
                                 <li>
