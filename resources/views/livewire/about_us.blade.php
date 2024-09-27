@@ -1,13 +1,13 @@
             <!-- ABOUT COMPANY SECTION START -->
-            <div class="section-full p-t40 p-b50">
+            <div class="section-full p-t40 ">
                 <div class="container">
                 	<!-- TITTLE START -->
                     <div class="section-head text-center">
                         <h2 style="font-size: 35px;">Sobre Nosotros</h2>
                     </div>
                     <!-- TITLE END -->                	
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 m-b30">
+                    <div class="row p-b40">
+                        <div class="col-lg-6 col-md-12">
                             <!--Fade slider-->
                             <div class="owl-carousel about-us-carousel owl-btn-vertical-center owl-dots-bottom-center">
                                 
@@ -37,13 +37,24 @@
                             
                             </div>
 
+                            <div class="row mt-5">
+                                <div class="col-md-6">
+                                    <img src="{{ url('/images/about_us1.jpeg') }}" alt="">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <img src="{{ url('/images/about_us1.jpeg') }}" alt="">
+
+                                </div>
+                            </div>
+
 
                             </div>
 
 
-                            <div class="col-lg-6 col-md-12 m-b30">
+                            <div class="col-lg-6 col-md-12">
                                 
-                                <video controls="controls" name="Video Name" style="width: 100%;">
+                                <video controls="controls" name="Video Name" style="width: 100%;height: 775px;">
                                     <source src="{{ url('/videos/work.mov') }}">
                                 </video>
                                                             

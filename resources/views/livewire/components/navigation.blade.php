@@ -126,7 +126,7 @@
                             <form role="search" id="searchform" action="/search" method="get" class="radius-xl">
                                 <div class="input-group">
                                     <input value="" name="term" type="search" placeholder="Buscar...">
-                                    <span class="input-group-btn"><button type="button" class="search-btn"><i class="fa fa-search"></i></button></span>
+                                    <span class="input-group-btn"><button type="submit" class="search-btn"><i class="fa fa-search"></i></button></span>
                                 </div>   
                             </form>
                         </div>
