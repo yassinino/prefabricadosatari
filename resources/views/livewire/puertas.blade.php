@@ -15,7 +15,7 @@
                         </div>
                         <div class="wt-box col-xl-8 col-lg-12 col-md-12 m-b30">
                             
-                            <img src="https://www.mallarapid.com/wp-content/uploads/2023/09/puertas-metalicas-correderas-galeria-07.jpg" alt="">
+                            <img src="https://www.vallasvalles.com/wp-content/uploads/2019/10/Detalle-nueva-manilla-negra-puerta-hercules.jpg" alt="">
                             
                         </div>
                     </div>
