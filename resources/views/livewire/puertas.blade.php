@@ -29,7 +29,7 @@
                                         <img src="{{ $product->thumbnail->getUrl() }}"
                                             alt="{{ $product->translateAttribute('name') }}" />
                                 @endif
-                                <h2 style="margin-top: 5px;">{{ $product->translateAttribute('name') }}</h2>
+                                <h2 style="margin-top: 10px;">{{ $product->translateAttribute('name') }}</h2>
                                 <p>{!! $product->translateAttribute('description') !!}</p>
                         </div>
 
