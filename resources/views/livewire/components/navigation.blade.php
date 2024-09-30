@@ -69,7 +69,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="#">Puertas</a>
+                                    <a href="/puertas">Puertas</a>
                                 </li>
 
                                 <li>
