@@ -29,8 +29,8 @@
                                         <img src="{{ $product->thumbnail->getUrl() }}"
                                             alt="{{ $product->translateAttribute('name') }}" />
                                 @endif
-                                <h2>{{ $product->translateAttribute('name') }}</h2>
-                                <p>Precio informativo – 7.000 lei / juego con IVA incluido (puerta para coches corredera/batiente de 4 m + puerta para peatones de 1 m)</p>
+                                <h2 style="margin-top: 5px;">{{ $product->translateAttribute('name') }}</h2>
+                                <p>{!! $product->translateAttribute('description') !!}</p>
                         </div>
 
                     @endforeach
