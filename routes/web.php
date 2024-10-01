@@ -23,6 +23,7 @@ use App\Http\Livewire\TerminosCondicionPage;
 use App\Http\Livewire\PoliticaCookiesPage;
 use App\Http\Livewire\PoliticaPrivacidadPage;
 use App\Http\Livewire\DecorationJardinPage;
+use App\Http\Livewire\TransportePage;
 
 
 use App\Http\Livewire\AboutUsPage;
@@ -83,6 +84,10 @@ Route::get('decoration-jardin', DecorationJardinPage::class)->name('decoration_j
 Route::get('component-gard', ComponentGardPage::class)->name('component_gard.view');
 
 Route::get('puertas', PuertasPage::class)->name('puertas.view');
+
+Route::get('transporte', TransportePage::class)->name('transporte.view');
+
+
 
 Route::get('about-us', AboutUsPage::class)->name('aboutus.view');
 

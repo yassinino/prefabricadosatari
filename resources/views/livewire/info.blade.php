@@ -57,12 +57,12 @@
                                     <div class="blog-post blog-grid date-style-3">
                                     
                                         <div class="wt-post-media wt-img-effect zoom-slow">
-                                            <a href="/"><img src="https://www.konkretline.ro/wp-content/uploads/2024/03/Transport-Gard-1200x675.webp" alt=""></a>
+                                            <a href="/transporte"><img src="{{ url('images/transporte.jpeg') }}" alt=""></a>
                                         </div>
                                         <div class="wt-post-info p-t30">
                                     
                                             <div class="wt-post-title ">
-                                                <h3 class="post-title"><a href="/">Valla de transporte</a></h3>
+                                                <h3 class="post-title"><a href="/transporte">Valla de transporte</a></h3>
                                             </div>
                                             <div class="wt-post-text">
                                                 <p>Entregamos millas de cercas cada año.</p> 
