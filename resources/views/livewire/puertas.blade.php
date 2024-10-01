@@ -7,7 +7,7 @@
                                 <h1>Puertas metálicas para coches y peatones.</h1>
 
                                 <p class="p-t100">
-                                    Con la instalación de la valla, recomendamos instalar los postes metálicos y verter la viga de hormigón armado. 
+                                    Con la instalación de la valla, recomendamos instalar los postes metálicos y verter la mezcla de hormigón armado. 
                                     Luego viene la fabricación de las puertas a las dimensiones de los huecos resultantes y su montaje.
                                 </p>
 

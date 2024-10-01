@@ -31,7 +31,7 @@
                         <div class="row m-t30">
 
                             <div class="col-md-6">
-                               <h1>Costos de transporte</h1>
+                               <h1>Los gastos de transporte</h1>
                                 <p>Los gastos de envío varían según la distancia recorrida y el peso de los productos solicitados, para garantizar una oferta justa y personalizada. Se beneficia del envío gratuito para pedidos superiores a 10000 Euros, dentro de un radio de 60 kilómetros desde nuestra fábrica.
                                 </p>
                             </div>
