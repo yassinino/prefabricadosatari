@@ -64,9 +64,7 @@
                                             <div class="wt-post-title ">
                                                 <h3 class="post-title"><a href="/transporte">Transporte</a></h3>
                                             </div>
-                                            <div class="wt-post-text">
-                                                <p>Entregamos millas de cercas cada año.</p> 
-                                            </div>
+
                                         </div>
                                         
                                     </div>
