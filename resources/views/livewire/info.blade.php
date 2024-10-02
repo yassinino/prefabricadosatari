@@ -22,9 +22,6 @@
                                             <div class="wt-post-title ">
                                                 <h3 class="post-title"><a href="/instalacion-de-valla">INSTALACIÓN DE VALLA DE HORMIGÓN PREFABRICADA</a></h3>
                                             </div>
-                                            <div class="wt-post-text">
-                                                <p>La instalación de hormigón impreso es sencilla y acostumbra a ser rápida.</p> 
-                                            </div>
                                         </div>
                                         
                                     </div>
@@ -42,9 +39,6 @@
                                     
                                             <div class="wt-post-title ">
                                                 <h3 class="post-title"><a href="/pedir-valla">¿Cómo pido la valla?</a></h3>
-                                            </div>
-                                            <div class="wt-post-text">
-                                                <p>Contamos con más de 60 diseños de paneles únicos que tienen diferentes tamaños y dimensiones. </p> 
                                             </div>
                                         </div>
                                         
