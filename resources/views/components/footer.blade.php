@@ -19,21 +19,21 @@
                                 </div>
                                 <ul>
                                     <li>
-                                    Cami dels Catalans N:4, 43330 Riudoms, Tarragona
+                                    <a href="https://www.google.com/maps/place/Cam%C3%AD+dels+Catalans,+13,+43330+Riudoms,+Tarragona,+Spain/@41.1316651,1.0347868,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x12a14f940156dfeb:0x8cfab4cb63b0fe77!2sCam%C3%AD+dels+Catalans,+4,+43330+Riudoms,+Tarragona,+Spain!3b1!8m2!3d41.1303569!4d1.0347174!3m5!1s0x12a14f3ee8de41ed:0xbf07ee3264c9f78f!8m2!3d41.1316619!4d1.0387237!16s%2Fg%2F11kbsxr4l9?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">Cami dels Catalans N:4, 43330 Riudoms, Tarragona</a>
                                     </li>
                                     <li>
                                     Lunes a viernes: 8-18
                                     </li>
-                                    <li>contact@prefabricadosatari.com</li>
-                                    <li>(+34) 661 015 962</li>
+                                    <li><a href="mailto:contact@prefabricadosatari.com" target="_blank">contact@prefabricadosatari.com</a></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=34661015962" target="_blank">(+34) 661 015 962</a></li>
                                   
                                 </ul>
 
                                 <ul class="social-bx list-inline">
-                                    <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                    <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
-                                    <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
-                                    <li><a href="javascript:void(0);" class="fa fa-whatsapp"></a></li>
+                                    <li><a href="https://www.facebook.com/prefabricadosatari" class="fa fa-facebook"></a></li>
+                                    <li><a href="https://www.instagram.com/prefabricadosatari" class="fa fa-instagram"></a></li>
+                                    <li><a href="https://x.com/Pefabricados24" class="fa fa-twitter"></a></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=34661015962" class="fa fa-whatsapp"></a></li>
                                 </ul>
                             </div>
                         </div>
