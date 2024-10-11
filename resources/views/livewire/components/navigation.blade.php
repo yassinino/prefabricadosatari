@@ -4,7 +4,7 @@
                 <div class="container">
                     <div class="wt-topbar-right">
                         <ul class="list-unstyled e-p-bx">
-                            <li><a href="https://www.google.com/maps/place/Cam%C3%AD+dels+Catalans,+13,+43330+Riudoms,+Tarragona,+Spain/@41.1316651,1.0347868,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x12a14f940156dfeb:0x8cfab4cb63b0fe77!2sCam%C3%AD+dels+Catalans,+4,+43330+Riudoms,+Tarragona,+Spain!3b1!8m2!3d41.1303569!4d1.0347174!3m5!1s0x12a14f3ee8de41ed:0xbf07ee3264c9f78f!8m2!3d41.1316619!4d1.0387237!16s%2Fg%2F11kbsxr4l9?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa fa-map-marker"></i>Cami dels Catalans N:4, 43330 Riudoms, Tarragona</a></li>
+                            <li><a href="https://www.google.com/maps/@41.1319197,1.0402833,21z?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="fa fa-map-marker"></i>Cami dels Catalans N:4, 43330 Riudoms, Tarragona</a></li>
                             <li><a href="https://api.whatsapp.com/send?phone=34661015962" target="_blank"><i class="fa fa-phone"></i>(+34) 661 015 962</a></li>
                             <li><a href="mailto:contact@prefabricadosatari.com" target="_blank"><i class="fa fa-envelope"></i>contact@prefabricadosatari.com</a></li>
                             
