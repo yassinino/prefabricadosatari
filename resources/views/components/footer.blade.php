@@ -19,7 +19,7 @@
                                 </div>
                                 <ul>
                                     <li>
-                                    <a href="https://www.google.com/maps/@41.1319197,1.0402833,21z?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Cami dels Catalans N:4, 43330 Riudoms, Tarragona</a>
+                                    <a href="https://www.google.com/maps/place/Granja+Font/@41.1320348,1.0400413,18.52z/data=!4m6!3m5!1s0x12a14feb3eaaaaab:0xca4556e76157159b!8m2!3d41.1319952!4d1.040361!16s%2Fg%2F11txv20n9t?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Cami dels Catalans N:4, 43330 Riudoms, Tarragona</a>
                                     </li>
                                     <li>
                                     Lunes a viernes: 8-18
