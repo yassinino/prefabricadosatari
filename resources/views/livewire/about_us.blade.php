@@ -13,25 +13,25 @@
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/pic_1.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_1.jpg') }}" alt="">
                                     </div>
                                 </div>
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/pic_2.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_2.jpg') }}" alt="">
                                     </div>
                                 </div>     
                                 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/pic_3.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_3.jpg') }}" alt="">
                                     </div>
                                 </div>
 
                                 <div class="item">
                                     <div class="aon-thum-bx">
-                                        <img src="{{ url('/images/nosotros/pic_4.jpeg') }}" alt="">
+                                        <img src="{{ url('/images/nosotros/pic_4.jpg') }}" alt="">
                                     </div>
                                 </div>
                             
@@ -39,11 +39,11 @@
 
                             <div class="row mt-5">
                                 <div class="col-md-6">
-                                    <img src="{{ url('/images/about_us1.jpeg') }}" alt="">
+                                    <img src="{{ url('/images/about_us1.jpg') }}" alt="">
                                 </div>
 
                                 <div class="col-md-6">
-                                    <img src="{{ url('/images/about_us2.jpeg') }}" alt="">
+                                    <img src="{{ url('/images/about_us2.jpg') }}" alt="">
 
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                             <div class="col-lg-6 col-md-12">
                                 
                                 <video controls="controls" name="Video Name" style="width: 100%;height: 775px;">
-                                    <source src="{{ url('/videos/work.mov') }}">
+                                    <source src="{{ url('/videos/vid_prefabricados.mp4') }}">
                                 </video>
                                                             
                             </div>
