@@ -31,24 +31,14 @@
                             <div class="wt-gallery-bx p-a15">
                                 <div class="wt-thum-bx wt-img-overlay5 wt-img-effect blurr">
                                     <a href="portfolio-detail.html">
-                                        @if($i <= 14)
-                                        <img src="{{ url('images/galeries/image_'.$i.'.jpeg') }}"  alt="" style="height: 350px!important;">
-                                        @else
-                                        <img src="{{ url('images/galeries/image_'.$i.'.jpg') }}"  alt="" style="height: 350px!important;">
-
-                                        @endif
+                                        <img src="{{ url('images/galeria/image_'.$i.'.jpg') }}"  alt="" style="height: 350px!important;">
                                     </a>
                                     <div class="overlay-bx">
                                         <div class="overlay-icon">
-                                        @if($i <= 14)
-                                            <a href="{{ url('images/galeries/image_'.$i.'.jpeg') }}" class="mfp-link">
+                                  
+                                            <a href="{{ url('images/galeria/image_'.$i.'.jpg') }}" class="mfp-link">
                                                 <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
                                             </a>
-                                            @else
-                                            <a href="{{ url('images/galeries/image_'.$i.'.jpg') }}" class="mfp-link">
-                                                <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
-                                            </a>
-                                            @endif
                                         </div>
                                         
 
