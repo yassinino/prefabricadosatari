@@ -18,6 +18,20 @@ class AllModelsPage extends Component
     public function addToFavorite($product_id){
         if(Auth::check()){
 
+            if(Wishlist::where('user_id', Auth()->user()->id)->where('product_id', $product_id)->first()){
+
+                Wishlist::where('user_id', Auth()->user()->id)->where('product_id', $product_id)->delete();
+
+            }else{
+
+                Wishlist::create([
+                    'user_id' => Auth()->user()->id,
+                    'product_id' => $product_id,
+                ]);
+
+                
+            }
+            
         }else{
             return redirect()->to('/login');
         }
