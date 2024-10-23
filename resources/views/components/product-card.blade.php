@@ -9,6 +9,15 @@
                                     <img src="{{ $product->thumbnail->getUrl('medium') }}"
                                         alt="{{ $product->translateAttribute('name') }}" />
                                 @endif
+
+                                <div class="overlay-bx">
+                                                    <div class="overlay-icon">
+                                                        <a class="mfp-link" href="javascript:void(0);" wire:click="addToFavorite({{ $product->id }})">
+                                                            <i class="fa fa-heart wt-icon-box-xs"></i>
+                                                        </a>
+                                                  </div>
+                                </div>
+
                             </div>
                             </a>
 

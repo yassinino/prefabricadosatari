@@ -24,12 +24,17 @@ use App\Http\Livewire\PoliticaCookiesPage;
 use App\Http\Livewire\PoliticaPrivacidadPage;
 use App\Http\Livewire\DecorationJardinPage;
 use App\Http\Livewire\TransportePage;
-
-
+use App\Http\Livewire\LoginPage;
+use App\Http\Livewire\RegisterPage;
+use App\Http\Livewire\LogoutPage;
 use App\Http\Livewire\AboutUsPage;
 use App\Http\Livewire\Admin\GalerieAdminPage;
 
 use Illuminate\Support\Facades\Route;
+
+
+use App\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +47,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::group(['middleware'=>'guest'], function(){
+    Route::get('/login', LoginPage::class)->name('login');
+    Route::get('/register', RegisterPage::class)->name('register');
+});
+
+Route::group(['middleware'=>'auth'], function(){
+    // Route::get('/dashboard', Dashboard::class)->name('dashboard');
+    Route::get('/logout', [AuthController::class, 'logout']);
+});
 
 Route::get('/', Home::class);
 

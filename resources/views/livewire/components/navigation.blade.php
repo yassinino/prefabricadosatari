@@ -10,8 +10,8 @@
                             
                         </ul>
                         <ul class="social-bx list-inline">
-                            <li><a href="https://www.facebook.com/prefabricadosatari" target="_blank" class="fa fa-facebook"></a></li>
-                            <li><a href="https://www.instagram.com/prefabricadosatari" target="_blank" class="fa fa-instagram"></a></li>
+                            <li><a href="https://www.facebook.com/prefabricadosatari24" target="_blank" class="fa fa-facebook"></a></li>
+                            <li><a href="https://www.instagram.com/prefabricadosatari2022" target="_blank" class="fa fa-instagram"></a></li>
                             <li><a href="https://x.com/Pefabricados24" target="_blank" class="fa fa-twitter"></a></li>
                             <li><a href="https://api.whatsapp.com/send?phone=34661015962" target="_blank" class="fa fa-whatsapp"></a></li>
                         </ul>
@@ -88,15 +88,26 @@
                                     <a href="{{ url('/about-us') }}">Sobre nosotros</a>
                                 </li>
 
+                                @guest
 
 
-                                <!-- @foreach ($this->collections as $collection)
 
                                     <li>
-                                        <a href="{{ route('collection.view', $collection->defaultUrl->slug) }}">{{ $collection->translateAttribute('name') }}</a>
+                                        <a href="/login" wire:navigate>Iniciar sesión</a>
                                     </li>
 
-                                @endforeach -->
+                                @else  
+                                
+                                <li>
+                                            <a href="javascript:;">{{Auth()->user()->name}}</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/mis-favoritos">Mis favoritos</a></li>
+                                                <li><a href="/logout" wire:navigate>Cerrar sesión</a></li>
+                                            </ul>
+                                </li>
+
+                                @endguest
+
 
                             </ul>
                         </div>

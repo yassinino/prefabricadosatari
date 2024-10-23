@@ -30,8 +30,8 @@
                                 </ul>
 
                                 <ul class="social-bx list-inline">
-                                    <li><a href="https://www.facebook.com/prefabricadosatari" class="fa fa-facebook"></a></li>
-                                    <li><a href="https://www.instagram.com/prefabricadosatari" class="fa fa-instagram"></a></li>
+                                    <li><a href="https://www.facebook.com/prefabricadosatari24" class="fa fa-facebook"></a></li>
+                                    <li><a href="https://www.instagram.com/prefabricadosatari2022" class="fa fa-instagram"></a></li>
                                     <li><a href="https://x.com/Pefabricados24" class="fa fa-twitter"></a></li>
                                     <li><a href="https://api.whatsapp.com/send?phone=34661015962" class="fa fa-whatsapp"></a></li>
                                 </ul>

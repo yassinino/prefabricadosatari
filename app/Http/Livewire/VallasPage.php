@@ -6,6 +6,8 @@ use App\Traits\FetchesUrls;
 use Livewire\Component;
 use Livewire\ComponentConcerns\PerformsRedirects;
 use Lunar\Models\Collection;
+use App\Models\Wishlist;
+use Auth;
 
 class VallasPage extends Component
 {
@@ -34,6 +36,28 @@ class VallasPage extends Component
 
         if (! $this->url) {
             abort(404);
+        }
+    }
+
+    public function addToFavorite($product_id){
+        if(Auth::check()){
+
+            if(Wishlist::where('user_id', Auth()->user()->id)->where('product_id', $product_id)->first()){
+
+                Wishlist::where('user_id', Auth()->user()->id)->where('product_id', $product_id)->delete();
+
+            }else{
+
+                Wishlist::create([
+                    'user_id' => Auth()->user()->id,
+                    'product_id' => $product_id,
+                ]);
+
+                
+            }
+            
+        }else{
+            return redirect()->to('/login');
         }
     }
 

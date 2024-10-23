@@ -10,7 +10,7 @@
     <title>Prefabricadosatari</title>
     <meta
         name="description"
-        content="Example of an ecommerce storefront built with Lunar."
+        content="Prefabricados Atari sl es una empresa con la actividad de producir vallas prefabricadas de hormigón, revestimientos y decoración de jardin, puertas y vallas metálicas."
     >
     <link rel="stylesheet" type="text/css" href="{{ url('css/bootstrap.min.css') }}"><!-- BOOTSTRAP STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="{{ url('css/fontawesome/css/font-awesome.min.css') }}"><!-- FONTAWESOME STYLE SHEET -->
@@ -51,6 +51,18 @@
         @livewire('components.navigation')
 
         <main style="padding-top: 120px;">
+
+            @if (session()->has('message'))
+                <div class="row justify-content-center text-center mt-3">
+                    <div class="col-md-8">
+                        <div class="alert alert-success" role="alert">
+                            {{ session('message') }}
+                        </div>
+                    </div>
+                </div>
+            @endif
+        
+
             {{ $slot }}
         </main>
 

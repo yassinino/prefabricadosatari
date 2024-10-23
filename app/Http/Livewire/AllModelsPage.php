@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use Lunar\Models\Product;
+use Auth;
 
 class AllModelsPage extends Component
 {
@@ -12,6 +13,14 @@ class AllModelsPage extends Component
 
     public function loadMore(){
         $this->amount += 20;
+    }
+
+    public function addToFavorite($product_id){
+        if(Auth::check()){
+
+        }else{
+            return redirect()->to('/login');
+        }
     }
 
 
