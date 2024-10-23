@@ -39,7 +39,7 @@ class RegisterPage extends Component
 
         session()->flash('message', 'You have successfully registered & logged in!');
  
-        return redirect()->back();
+        return redirect()->to('/');
     }
     
     public function render()
