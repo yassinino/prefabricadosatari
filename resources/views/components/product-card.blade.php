@@ -2,7 +2,6 @@
 
 
                         <div class="wt-box wt-product-box">
-                            <a href="{{ route('product.view', $product->defaultUrl->slug) }}">
                             <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
                                 @if ($product->thumbnail)
                                 
@@ -19,7 +18,6 @@
                                 </div>
 
                             </div>
-                            </a>
 
                             <div class="wt-info">
                                 <div class="p-a10 bg-white">
