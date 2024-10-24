@@ -99,7 +99,8 @@
 
 
 
-
+<a href="https://api.whatsapp.com/send?phone=34661015962" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
 </body>
 
 </html>
