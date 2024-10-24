@@ -7,7 +7,7 @@ use Lunar\Models\Product;
 use Auth;
 use App\Models\Wishlist;
 
-class AllModelsPage extends Component
+class MisFavoritosPage extends Component
 {
     public $amount = 20;
 
@@ -41,9 +41,8 @@ class AllModelsPage extends Component
 
     public function render()
     {
-        $products = Product::whereHas('collections', function($query){
-            $query->where('lunar_collections.id', '<>' , 6);
-        })->where('status', 'published')->take($this->amount)->orderBy('created_at', 'desc')->get();
-        return view('livewire.all_models', ['products' => $products]);
+        $ids = Wishlist::where('user_id', Auth()->user()->id)->pluck('product_id');
+        $products = Product::whereIn('id', $ids)->where('status', 'published')->take($this->amount)->orderBy('created_at', 'desc')->get();
+        return view('livewire.mis_favoritos', ['products' => $products]);
     }
 }

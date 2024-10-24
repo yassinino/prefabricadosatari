@@ -37,7 +37,7 @@ class RegisterPage extends Component
 
         Auth::attempt($credentials);
 
-        session()->flash('message', 'You have successfully registered & logged in!');
+        session()->flash('message', '¡Te has registrado e iniciado sesión con éxito!');
  
         return redirect()->to('/');
     }

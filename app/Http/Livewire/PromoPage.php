@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use Lunar\Models\Product;
+use App\Models\Wishlist;
 
 class PromoPage extends Component
 {

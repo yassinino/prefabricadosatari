@@ -30,7 +30,7 @@ class LoginPage extends Component
             return redirect()->to('/');
         }
         
-        session()->flash('error', 'Invalid credentials!');
+        session()->flash('error', '¡Credenciales inválidas!');
     }   
 
     public function render()

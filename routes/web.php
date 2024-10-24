@@ -28,6 +28,7 @@ use App\Http\Livewire\LoginPage;
 use App\Http\Livewire\RegisterPage;
 use App\Http\Livewire\LogoutPage;
 use App\Http\Livewire\AboutUsPage;
+use App\Http\Livewire\MisFavoritosPage;
 use App\Http\Livewire\Admin\GalerieAdminPage;
 
 use Illuminate\Support\Facades\Route;
@@ -56,6 +57,8 @@ Route::group(['middleware'=>'guest'], function(){
 Route::group(['middleware'=>'auth'], function(){
     // Route::get('/dashboard', Dashboard::class)->name('dashboard');
     Route::get('/logout', [AuthController::class, 'logout']);
+    Route::get('mis-favoritos', MisFavoritosPage::class)->name('mis_favoritos.view');
+
 });
 
 Route::get('/', Home::class);
@@ -79,6 +82,7 @@ Route::get('pedir-valla', PedirVallaPage::class)->name('pedir.view');
 Route::get('vallas/{slug}', VallasPage::class)->name('vallas.view');
 
 Route::get('all-models', AllModelsPage::class)->name('all_models.view');
+
 
 Route::get('promo', PromoPage::class)->name('promo.view');
 
