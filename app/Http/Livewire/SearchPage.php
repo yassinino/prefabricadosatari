@@ -31,7 +31,8 @@ class SearchPage extends Component
      */
     public function getResultsProperty()
     {
-        return Product::search($this->term)->paginate(50);
+
+        return Product::where('attribute_data', 'LIKE', '%'.$this->term.'%')->paginate(50);
     }
 
     public function render()

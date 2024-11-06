@@ -13,9 +13,11 @@ use App\Http\Livewire\PedirVallaPage;
 use App\Http\Livewire\VallasPage;
 use App\Http\Livewire\AllModelsPage;
 use App\Http\Livewire\ComponentGardPage;
+use App\Http\Livewire\PilaresPage;
 use App\Http\Livewire\GaleriePage;
 use App\Http\Livewire\PuertasPage;
 use App\Http\Livewire\PromoPage;
+use App\Http\Livewire\CalculadoraVallados;
 use App\Http\Livewire\AvisoLegalPage;
 use App\Http\Livewire\PoliticaEnvioPage;
 use App\Http\Livewire\CondicionesGeneralPage;
@@ -63,6 +65,11 @@ Route::group(['middleware'=>'auth'], function(){
 
 Route::get('/', Home::class);
 
+
+
+
+Route::get('/calculadora-vallados', CalculadoraVallados::class)->name('collection.calculadora');
+
 Route::get('/collections/{slug}', CollectionPage::class)->name('collection.view');
 
 Route::get('/products/{slug}', ProductPage::class)->name('product.view');
@@ -101,6 +108,8 @@ Route::get('condiciones-contrato', CondicionesGeneralPage::class)->name('condici
 Route::get('decoration-jardin', DecorationJardinPage::class)->name('decoration_jardin.view');
 
 Route::get('component-gard', ComponentGardPage::class)->name('component_gard.view');
+
+Route::get('pilares', PilaresPage::class)->name('pilares.view');
 
 Route::get('puertas', PuertasPage::class)->name('puertas.view');
 

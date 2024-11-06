@@ -5,7 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use Lunar\Models\Product;
 
-class ComponentGardPage extends Component
+class PilaresPage extends Component
 {
     public $amount = 10;
 
@@ -19,8 +19,8 @@ class ComponentGardPage extends Component
     {
 
         $products = Product::whereHas('collections', function($query){
-            $query->where('lunar_collections.id', 9); //cubre pilar
+            $query->where('lunar_collections.id', 7); //pilares
         })->orderBy('created_at', 'desc')->get();
-        return view('livewire.component_gard', ['products' => $products]);
+        return view('livewire.pilares', ['products' => $products]);
     }
 }

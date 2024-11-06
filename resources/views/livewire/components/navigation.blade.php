@@ -57,6 +57,9 @@
                                             <a href="/component-gard">Componentes de valla</a>
                                         </li>
                                         <li>
+                                            <a href="/pilares">Pilares</a>
+                                        </li>
+                                        <li>
                                             <a href="/vallas/paneles-medida-especial">Paneles medida especial</a>
                                         </li>
                                         <li>
