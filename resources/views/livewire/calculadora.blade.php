@@ -24,7 +24,7 @@
                                     <h3 class="text-center">Selecciona el tipo de vallado</h3>
                                     <div class="grid-wrapper grid-col-auto">
                                         <label for="radio-card-1" class="radio-card">
-                                            <input type="radio" name="tipo_valla" id="radio-card-1" value="modern_line" wire:model="data.tipo" />
+                                            <input type="radio" name="tipo_valla" id="radio-card-1" value="Modern line" wire:model="data.tipo" />
                                             <div class="card-content-wrapper">
                                             <span class="check-icon"></span>
                                             <div class="card-content">
@@ -39,7 +39,7 @@
                                         <!-- /.radio-card -->
 
                                         <label for="radio-card-2" class="radio-card">
-                                            <input type="radio" name="tipo_valla" value="simple_line" id="radio-card-2" wire:model="data.tipo"/>
+                                            <input type="radio" name="tipo_valla" value="Simple line" id="radio-card-2" wire:model="data.tipo"/>
                                             <div class="card-content-wrapper">
                                             <span class="check-icon"></span>
                                             <div class="card-content">
@@ -57,7 +57,7 @@
 
                                     <div class="grid-wrapper grid-col-auto">
                                         <label for="radio-card-3" class="radio-card">
-                                            <input type="radio" name="tipo_valla" value="aero_line" id="radio-card-3" wire:model="data.tipo"/>
+                                            <input type="radio" name="tipo_valla" value="Aero line" id="radio-card-3" wire:model="data.tipo"/>
                                             <div class="card-content-wrapper">
                                             <span class="check-icon"></span>
                                             <div class="card-content">
@@ -72,7 +72,7 @@
                                         <!-- /.radio-card -->
 
                                         <label for="radio-card-4" class="radio-card">
-                                            <input type="radio" name="tipo_valla" value="nature_line" id="radio-card-4" wire:model="data.tipo"/>
+                                            <input type="radio" name="tipo_valla" value="Nature line" id="radio-card-4" wire:model="data.tipo"/>
                                             <div class="card-content-wrapper">
                                             <span class="check-icon"></span>
                                             <div class="card-content">
@@ -218,14 +218,20 @@
 
                                         @case(7)
                                             <h3 class="text-center">Elige el modelo de poste que quieres para cercado</h3>
-                                            <div class="grid-wrapper grid-col-auto">
+                                            <div class="grid-wrapper grid-col-auto row">
 
                                             @foreach($products as $key => $product)
-                                                <label for="modelos-card-{{$key}}" class="radio-card">
+
+                                                <label for="modelos-card-{{$key}}" class="radio-card col-md-12">
                                                     <input type="radio" name="modelos_carcados" id="modelos-card-{{$key}}" value="{{$product->id}}" wire:model="data.modelos" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
-                                                    <div class="card-content">
+                                                    <div class="card-content text-center">
+                                                    <img
+                                                        src="{{ $product->images[0]->getUrl('small') }}"
+                                                        alt=""
+                                                        style="width: 90px;"
+                                                        />
                                                         <h4>{{ $product->translateAttribute('name') }}</h4>
                                                     </div>
                                                     </div>
@@ -281,7 +287,7 @@
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
-                                                        <h4> <input type="color" value="#ffffff" disabled style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);"> Color RAL</h4>
+                                                        <h4> <input type="color" value="#23d269" disabled> Color RAL</h4>
                                                     </div>
                                                     </div>
                                                 </label>
@@ -301,8 +307,6 @@
                                         @case(10)
                                             <h3 class="text-center">Indica el número de puertas para vehículos</h3>
                                             <div class="offset-md-4 col-md-4 mb-3">
-                                                    <span>Puertas acceso vehículos de 3ml</span>  
-                                                    <input type="number" class="form-control" placeholder="" wire:model="data.puertas_veh_3"> <br>
                                                     <span>Puertas acceso vehículos de 4ml</span>  
                                                     <input type="number" class="form-control" placeholder="" wire:model="data.puertas_veh_4">
                                             </div>
@@ -318,8 +322,8 @@
                                                         <p>Color del vallado: {{ $data['color'] }}</p>
                                                     </li>
                                                     <li>
-                                                        <p>1</p>
-                                                        <p>rollos de malla simple torsión</p>
+                                                        <p>{{ $data['metros'] / 2 }}</p>
+                                                        <p>{{ $data['tipo'] }}</p>
                                                     </li>
                                                     <li>
                                                         <p>
@@ -332,7 +336,7 @@
 
                                                     <li>
                                                         <p>
-                                                        {{ $data['arranque'] }}
+                                                        {{ $data['peatonal'] * 2 }}
                                                         </p>
                                                         <p>
                                                             postes arranque o final
@@ -350,10 +354,10 @@
 
                                                     <li>
                                                         <p>
-                                                        {{ $data['puertas_veh_3'] }}
+                                                        {{ $data['puertas_veh_4'] * 2 }}
                                                         </p>
                                                         <p>
-                                                            Puerta de acceso para vehículos 3ml
+                                                            Pilares arranque final puertas
                                                         </p>
                                                     </li>
 
@@ -392,7 +396,7 @@
                                         <i class="fa fa-calculator"></i> Volver a calcular
                                     </button>
 
-                                    <button class="col-md-6 btn btn-success">
+                                    <button class="col-md-6 btn btn-success" data-toggle="modal" data-target="#exampleModal">
                                         <i class="fa fa-envelope"></i> Enviar formulario para solicitar presupuesto
                                     </button>
                                     @endif
@@ -406,8 +410,31 @@
                        </div> 
                    </div>
                  </div>
+
+
+
 </div>
 
+                 <!-- Modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
 
 <script>
     $(document).on('click', '#sigue', function (e) {

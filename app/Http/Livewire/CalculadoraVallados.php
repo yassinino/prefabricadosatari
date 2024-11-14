@@ -41,14 +41,12 @@ class CalculadoraVallados extends Component
     public function calcular(){
 
         Session::put('calculadora_data', $this->data);
-
+        
         $validator = Validator::make($this->data,[
             'tipo' => 'required',
             'color' => 'required',
-            'arranque' => 'required',
             'metros' => 'required',
             'esquinas' => 'required',
-            'puertas_veh_3' => 'required',
         ]);
 
         if($validator->fails()){
