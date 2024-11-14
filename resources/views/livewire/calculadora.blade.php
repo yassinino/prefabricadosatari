@@ -228,7 +228,7 @@
                                                     <span class="check-icon"></span>
                                                     <div class="card-content text-center">
                                                     <img
-                                                        src="{{ url('images/linea_nat.jpeg') }}"
+                                                        src="{{ $product->images[0]->getUrl('small') }}"
                                                         alt=""
                                                         style="width: 90px;"
                                                         />
