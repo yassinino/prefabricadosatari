@@ -218,17 +218,17 @@
 
                                         @case(7)
                                             <h3 class="text-center">Elige el modelo de poste que quieres para cercado</h3>
-                                            <div class="grid-wrapper grid-col-auto row">
+                                            <div class="row">
 
                                             @foreach($products as $key => $product)
 
-                                                <label for="modelos-card-{{$key}}" class="radio-card col-md-12">
+                                                <label for="modelos-card-{{$key}}" class="radio-card col-2 text-center">
                                                     <input type="radio" name="modelos_carcados" id="modelos-card-{{$key}}" value="{{$product->id}}" wire:model="data.modelos" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content text-center">
                                                     <img
-                                                        src="{{ $product->images[0]->getUrl('small') }}"
+                                                        src="{{ url('images/linea_nat.jpeg') }}"
                                                         alt=""
                                                         style="width: 90px;"
                                                         />
