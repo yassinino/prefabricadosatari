@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" class="skin" href="{{ url('css/skin/skin-5.css') }}"><!-- THEME COLOR CHANGE STYLE SHEET -->
     <!-- Alpine Plugins -->
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <!-- Alpine Core -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
@@ -99,8 +99,15 @@
 
 
 
+
+<a href="/calculadora-vallados" title="Calculadora de vallas y mallas" class="btn-calculadora">
+      <i class="fa fa-calculator"></i>
+      <p>Calculadora</p>
+</a>
+
 <a href="https://api.whatsapp.com/send?phone=34661015962" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
+</a>
 </body>
 
 </html>
