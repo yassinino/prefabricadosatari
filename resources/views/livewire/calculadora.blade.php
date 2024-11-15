@@ -103,7 +103,7 @@
                                         <h3 class="text-center">Selecciona la altura</h3>
                                         <div class="grid-wrapper grid-col-auto">
                                             <label for="radio-card-1" class="radio-card">
-                                                <input type="radio" name="altura_valla" id="radio-card-1" value="modern_line" wire:model="data.altura" />
+                                                <input type="radio" name="altura_valla" id="radio-card-1" value="0.5 metros" wire:model="data.altura" />
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
@@ -114,7 +114,7 @@
                                             <!-- /.radio-card -->
 
                                             <label for="radio-card-2" class="radio-card">
-                                                <input type="radio" name="altura_valla" value="simple_line" id="radio-card-2" wire:model="data.altura"/>
+                                                <input type="radio" name="altura_valla" value="1.0 metros" id="radio-card-2" wire:model="data.altura"/>
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
@@ -128,7 +128,7 @@
 
                                         <div class="grid-wrapper grid-col-auto">
                                             <label for="radio-card-3" class="radio-card">
-                                                <input type="radio" name="altura_valla" value="aero_line" id="radio-card-3" wire:model="data.altura"/>
+                                                <input type="radio" name="altura_valla" value="1.5 metros" id="radio-card-3" wire:model="data.altura"/>
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
@@ -139,7 +139,7 @@
                                             <!-- /.radio-card -->
 
                                             <label for="radio-card-4" class="radio-card">
-                                                <input type="radio" name="altura_valla" value="nature_line" id="radio-card-4" wire:model="data.altura"/>
+                                                <input type="radio" name="altura_valla" value="2.0 metros" id="radio-card-4" wire:model="data.altura"/>
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
@@ -159,7 +159,7 @@
                                             <h3 class="text-center">Distancia entre los postes</h3>
                                             <div class="offset-md-4 col-md-4 mb-3">
                                                 <select name="" class="form-control" wire:model="data.distancia">
-                                                    <option value="2">Cada 2 Metros</option>
+                                                    <option value="Cada 2 Metros" selected>Cada 2 Metros</option>
                                                 </select>
                                             </div>
                                         @break
@@ -195,7 +195,7 @@
                                             <h3 class="text-center">Número de postes arranque-final</h3>
                                             <div class="offset-md-4 col-md-4 mb-3">
                                                     <span>Mi cercado tiene</span>  
-                                                    <input type="number" class="form-control" placeholder="Pon aquí el número de postes" wire:model="data.arranque">
+                                                    <input type="number" class="form-control" placeholder="Pon aquí el número de postes" value="" wire:model="data.arranque">
                                                     <span>postes arranque-final</span>
                                             </div>
                                         @break
@@ -204,7 +204,7 @@
                                             <h3 class="text-center">Selecciona cómo irán fijados los postes</h3>
                                             <div class="grid-wrapper grid-col-auto">
                                                 <label for="radio-card-10" class="radio-card">
-                                                    <input type="radio" name="altura_valla" id="radio-card-10" value="modern_line" wire:model="data.fijados" />
+                                                    <input type="radio" name="altura_valla" id="radio-card-10" value="Hormigon" wire:model="data.fijados" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
@@ -223,7 +223,7 @@
                                             @foreach($products as $key => $product)
 
                                                 <label for="modelos-card-{{$key}}" class="radio-card col-2 text-center">
-                                                    <input type="radio" name="modelos_carcados" id="modelos-card-{{$key}}" value="{{$product->id}}" wire:model="data.modelos" />
+                                                    <input type="radio" name="modelos_carcados" id="modelos-card-{{$key}}" value="{{ $product->translateAttribute('name') }}" wire:model="data.modelo" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content text-center">
@@ -250,7 +250,7 @@
 
                                             <div class="grid-wrapper grid-col-auto">
                                                 <label for="radio-color-1" class="radio-card">
-                                                    <input type="radio" name="modelo-color" id="radio-color-1" value="blanco" wire:model="data.color" />
+                                                    <input type="radio" name="modelo-color" id="radio-color-1" value="Blanco" wire:model="data.color" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
@@ -260,7 +260,7 @@
                                                 </label>
 
                                                 <label for="radio-color-2" class="radio-card">
-                                                    <input type="radio" name="modelo-color" id="radio-color-2" value="gris" wire:model="data.color" />
+                                                    <input type="radio" name="modelo-color" id="radio-color-2" value="Gris Hormigon" wire:model="data.color" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
@@ -273,7 +273,7 @@
 
                                             <div class="grid-wrapper grid-col-auto">
                                                 <label for="radio-color-3" class="radio-card">
-                                                    <input type="radio" name="modelo-color" id="radio-color-3" value="negro" wire:model="data.color" />
+                                                    <input type="radio" name="modelo-color" id="radio-color-3" value="Negro" wire:model="data.color" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
@@ -283,7 +283,7 @@
                                                 </label>
 
                                                 <label for="radio-color-4" class="radio-card">
-                                                    <input type="radio" name="modelo-color" id="radio-color-4" value="ral" wire:model="data.color" />
+                                                    <input type="radio" name="modelo-color" id="radio-color-4" value="Color RAL" wire:model="data.color" />
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
@@ -396,7 +396,7 @@
                                         <i class="fa fa-calculator"></i> Volver a calcular
                                     </button>
 
-                                    <button class="col-md-6 btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                    <button class="col-md-6 btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
                                         <i class="fa fa-envelope"></i> Enviar formulario para solicitar presupuesto
                                     </button>
                                     @endif
@@ -412,29 +412,11 @@
                  </div>
 
 
+                 @livewire('components.presupuesto')
 
 </div>
 
-                 <!-- Modal -->
-                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                        </div>
-                    </div>
-                </div>
+
 
 <script>
     $(document).on('click', '#sigue', function (e) {

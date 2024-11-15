@@ -15,6 +15,7 @@ class CalculadoraVallados extends Component
         'metros' => '',
         'color' => '',
         'altura' => '',
+        'arranque' => '',
         'distancia' => '',
         'esquinas' => '',
         'peatonal' => '',
@@ -38,6 +39,7 @@ class CalculadoraVallados extends Component
         Session::put('calculadora_data', $this->data);
     }
 
+
     public function calcular(){
 
         Session::put('calculadora_data', $this->data);
@@ -59,10 +61,10 @@ class CalculadoraVallados extends Component
     }
 
     public function recalcular(){
-        $this->current_step = 1;
-        $this->data = [];
         Session::forget('calculadora_step');
         Session::forget('calculadora_data');
+        $this->current_step = 0;
+        $this->data = [];
     }
 
     public function render()

@@ -12167,6 +12167,13 @@ ol.commentlist li::after {
     color: #FFF;
 }
 
+.presupuesto{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.presupuesto .form-control{
+	height: 55px!important;
+}
   
   /* ******************* Main Styeles : Radio Card */
   label.radio-card {
