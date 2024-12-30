@@ -34,11 +34,6 @@
         </tr>
 
         <tr>
-            <th><b>Número de postes arranque-final :</b></th>
-            <td>{{ isset($data['arranque']) ? $data['arranque']  : ''}}</td>
-        </tr>
-
-        <tr>
             <th><b>Cómo irán fijados los postes :</b></th>
             <td>{{ $data['fijados'] }}</td>
         </tr>
@@ -68,12 +63,17 @@
         </tr>
 
         <tr>
-            <th><b>Postes de 2m de altura :</b></th>
-            <td>{{ $data['metros'] / 2 }}</td>
+            <th><b>Postes de {{$data['altura']}} de altura :</b></th>
+
+            @php
+                $ar_fi = $data['peatonal'] * 2;
+                $ar_pila = $data['puertas_veh_4'] * 2;
+            @endphp
+            <td>{{ ($data['metros'] / 2) - ($ar_fi +  $ar_pila + $data['esquinas']) }}</td>
         </tr>
 
         <tr>
-            <th><b>Postes arranque o final :</b></th>
+            <th><b>Postes arranque o final puerta peatonal :</b></th>
             <td>{{ $data['peatonal'] * 2 }}</td>
         </tr>
 
