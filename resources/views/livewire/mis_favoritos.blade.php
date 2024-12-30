@@ -17,10 +17,7 @@
                                         <x-product-card :product="$product" :type="$product->collections[0]->translateAttribute('name')"/>
                                     </div>
 
-                                    <button class="btn" wire:click="loadMore">Cargar más</button>
 
-
-                                    
                                     @empty
 
                                     <h2>No agregaste ningún producto.</h2>
@@ -28,7 +25,14 @@
 
 
                                     @endforelse
-                                   
+
+
+                                    @if(count($products) > 0)
+
+                                    <button class="btn" wire:click="loadMore">Cargar más</button>
+
+                                    @endif
+                                    
                                 </div>
                                 
                             </div>
