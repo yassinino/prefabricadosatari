@@ -54,8 +54,8 @@ class CalculadoraVallados extends Component
         if($validator->fails()){
             session()->flash('error', '¡Desculpa! Los Campos son obligatorios para calcular.');
         }else{
-            $this->current_step = 11;
-            Session::put('calculadora_step', 11);
+            $this->current_step = 10;
+            Session::put('calculadora_step', 10);
         }
 
     }
