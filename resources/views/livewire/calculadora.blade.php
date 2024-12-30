@@ -191,16 +191,16 @@
                                             </div>
                                         @break
 
-                                        @case(5)
+                                        <!-- @case(5)
                                             <h3 class="text-center">Número de postes arranque-final</h3>
                                             <div class="offset-md-4 col-md-4 mb-3">
                                                     <span>Mi cercado tiene</span>  
                                                     <input type="number" class="form-control" placeholder="Pon aquí el número de postes" value="" wire:model="data.arranque">
                                                     <span>postes arranque-final</span>
                                             </div>
-                                        @break
+                                        @break -->
 
-                                        @case(6)
+                                        @case(5)
                                             <h3 class="text-center">Selecciona cómo irán fijados los postes</h3>
                                             <div class="grid-wrapper grid-col-auto">
                                                 <label for="radio-card-10" class="radio-card">
@@ -216,7 +216,7 @@
                                             </div>
                                         @break
 
-                                        @case(7)
+                                        @case(6)
                                             <h3 class="text-center">Elige el modelo de poste que quieres para cercado</h3>
                                             <div class="row">
 
@@ -245,7 +245,7 @@
                                         @break
 
 
-                                        @case(8)
+                                        @case(7)
                                             <h3 class="text-center">Elige el color de tu vallado</h3>
 
                                             <div class="grid-wrapper grid-col-auto">
@@ -264,7 +264,7 @@
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
-                                                        <h4><input type="color" value="Gris Hormigon" disabled> Gris Hormigon </h4>
+                                                        <h4><input type="color" value="#f3f3f3" disabled> Gris Hormigon </h4>
                                                     </div>
                                                     </div>
                                                 </label>
@@ -296,7 +296,7 @@
                                         @break
 
 
-                                        @case(9)
+                                        @case(8)
                                             <h3 class="text-center">Indica el número de puertas de acceso peatonal</h3>
                                             <div class="offset-md-4 col-md-4 mb-3">
                                                     <span>Puertas acceso peatonal de 0.8ml</span>  
@@ -304,7 +304,7 @@
                                             </div>
                                         @break
 
-                                        @case(10)
+                                        @case(9)
                                             <h3 class="text-center">Indica el número de puertas para vehículos</h3>
                                             <div class="offset-md-4 col-md-4 mb-3">
                                                     <span>Puertas acceso vehículos de 4ml</span>  
@@ -313,7 +313,7 @@
                                         @break
 
 
-                                        @case(11)
+                                        @case(10)
                                             <h3 class="text-center">Material necesario para vallado {{ $data['tipo'] }}</h3>
                                             <div class="offset-md-4 col-md-8 informacion-vallado">
                                                    <ul>
