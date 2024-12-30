@@ -264,7 +264,7 @@
                                                     <div class="card-content-wrapper">
                                                     <span class="check-icon"></span>
                                                     <div class="card-content">
-                                                        <h4><input type="color" value="#f3f3f3" disabled> Gris Hormigon </h4>
+                                                        <h4><input type="color" value="Gris Hormigon" disabled> Gris Hormigon </h4>
                                                     </div>
                                                     </div>
                                                 </label>
@@ -318,7 +318,7 @@
                                             <div class="offset-md-4 col-md-8 informacion-vallado">
                                                    <ul>
                                                     <li>
-                                                        <p>{{ $data['color'] == '#f3f3f3' ? '-' : '+20%'}}</p>
+                                                        <p>{{ $data['color'] == 'Gris Hormigon' ? '-' : '+20%'}}</p>
                                                         <p>Color del vallado: {{ $data['color'] }}</p>
                                                     </li>
                                                     <li>
