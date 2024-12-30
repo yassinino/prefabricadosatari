@@ -419,7 +419,7 @@
                                     </button>
                                     @endif
 
-                                    @if($current_step == 8)
+                                    @if($current_step == 9)
                                     <button wire:click.prevent="calcular()" class="col-md-3 btn btn-success">
                                         <i class="fa fa-calculator"></i> Calcular
                                     </button>
