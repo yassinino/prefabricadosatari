@@ -389,7 +389,7 @@
                                                         {{ $data['peatonal'] * 2 }}
                                                         </p>
                                                         <p>
-                                                            Postes arranque o final
+                                                            Postes arranque o final puerta peatonal
                                                         </p>
                                                     </li>
 
