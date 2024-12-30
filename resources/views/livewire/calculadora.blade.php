@@ -103,22 +103,22 @@
                                         <h3 class="text-center">Selecciona la altura</h3>
                                         <div class="grid-wrapper grid-col-auto">
                                             <label for="radio-card-1" class="radio-card">
-                                                <input type="radio" name="altura_valla" id="radio-card-1" value="0.5 metros" wire:model="data.altura" />
+                                                <input type="radio" name="altura_valla" id="radio-card-1" value="0.5m" wire:model="data.altura" />
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
-                                                    <h4>0.5 metros</h4>
+                                                    <h4>0.5m</h4>
                                                 </div>
                                                 </div>
                                             </label>
                                             <!-- /.radio-card -->
 
                                             <label for="radio-card-2" class="radio-card">
-                                                <input type="radio" name="altura_valla" value="1.0 metros" id="radio-card-2" wire:model="data.altura"/>
+                                                <input type="radio" name="altura_valla" value="1.0m" id="radio-card-2" wire:model="data.altura"/>
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
-                                                    <h4>1.0 metros</h4>
+                                                    <h4>1.0m</h4>
                                                 </div>
                                                 </div>
                                             </label>
@@ -128,22 +128,22 @@
 
                                         <div class="grid-wrapper grid-col-auto">
                                             <label for="radio-card-3" class="radio-card">
-                                                <input type="radio" name="altura_valla" value="1.5 metros" id="radio-card-3" wire:model="data.altura"/>
+                                                <input type="radio" name="altura_valla" value="1.5m" id="radio-card-3" wire:model="data.altura"/>
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
-                                                    <h4>1.5 metros</h4>
+                                                    <h4>1.5m</h4>
                                                 </div>
                                                 </div>
                                             </label>
                                             <!-- /.radio-card -->
 
                                             <label for="radio-card-4" class="radio-card">
-                                                <input type="radio" name="altura_valla" value="2.0 metros" id="radio-card-4" wire:model="data.altura"/>
+                                                <input type="radio" name="altura_valla" value="2.0m" id="radio-card-4" wire:model="data.altura"/>
                                                 <div class="card-content-wrapper">
                                                 <span class="check-icon"></span>
                                                 <div class="card-content">
-                                                    <h4>2.0 metros</h4>
+                                                    <h4>2.0m</h4>
                                                 </div>
                                                 </div>
                                             </label>
@@ -330,7 +330,7 @@
 
 
                                                         @switch($data['altura'])
-                                                            @case("0.5 metros")
+                                                            @case("0.5m")
                                                                 @php
 
                                                                 $metro = 1;
@@ -338,7 +338,7 @@
                                                                 @endphp
                                                                 @break
 
-                                                            @case("1.0 metros")
+                                                            @case("1.0m")
                                                             @php
 
                                                             $metro = 2;
@@ -347,7 +347,7 @@
 
                                                                 @break
 
-                                                            @case("1.5 metros")
+                                                            @case("1.5m")
                                                                 @php
 
                                                                 $metro = 3;
@@ -355,7 +355,7 @@
                                                                 @endphp
 
                                                                 @break
-                                                            @case("2.0 metros")
+                                                            @case("2.0m")
                                                             @php
 
                                                             $metro = 4;
@@ -376,7 +376,7 @@
                                                             {{ ($data['metros'] / 2) - ($data['peatonal'] +  $data['puertas_veh_4']) }}
                                                         </p>
                                                         <p>
-                                                            Postes de 2m de altura
+                                                            Postes de {{$data['altura']}} de altura
                                                         </p>
                                                     </li>
 
