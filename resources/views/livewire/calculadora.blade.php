@@ -422,26 +422,26 @@
 
 
                                 <div class="offset-md-4">
-                                    @if($current_step > 0 && $current_step < 11)
+                                    @if($current_step > 0 && $current_step < 10)
                                     <button wire:click.prevent="changeStep({{$current_step - 1}})" class="col-md-3 btn btn-primary" onclick="window.scrollTo(0, 0);">
                                         <i class="fa fa-angle-left"></i> Anterior
                                     </button>
                                     @endif
 
-                                    @if($current_step == 10)
+                                    @if($current_step == 8)
                                     <button wire:click.prevent="calcular()" class="col-md-3 btn btn-success">
                                         <i class="fa fa-calculator"></i> Calcular
                                     </button>
                                     @endif
 
-                                    @if($current_step < 10)
+                                    @if($current_step < 9)
                                     <button wire:click.prevent="changeStep({{$current_step + 1}})" class="col-md-3 btn btn-success" onclick="window.scrollTo(0, 0);">
                                         Siguiente <i class="fa fa-angle-right"></i>
                                     </button>
                                     @endif
                                 </div>
                                 <div class="offset-md-2">
-                                    @if($current_step == 11)
+                                    @if($current_step == 10)
                                     <button wire:click.prevent="recalcular()" wire:confirm="Seguro quieres Volver a calcular?" class="col-md-3 btn btn-success">
                                         <i class="fa fa-calculator"></i> Volver a calcular
                                     </button>
