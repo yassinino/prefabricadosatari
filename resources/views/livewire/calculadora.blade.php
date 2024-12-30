@@ -372,8 +372,12 @@
                                                         <p>{{ $data['tipo'] }} Paneles</p>
                                                     </li>
                                                     <li>
+                                                        @php
+                                                            $ar_fi = $data['peatonal'] * 2;
+                                                            $ar_pila = $data['puertas_veh_4'] * 2;
+                                                        @endphp
                                                         <p>
-                                                            {{ ($data['metros'] / 2) - ($data['peatonal'] +  $data['puertas_veh_4']) }}
+                                                            {{ ($data['metros'] / 2) - ($ar_fi +  $ar_pila + $data['esquinas']) }}
                                                         </p>
                                                         <p>
                                                             Postes de {{$data['altura']}} de altura
