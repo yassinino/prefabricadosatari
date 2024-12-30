@@ -318,7 +318,7 @@
                                             <div class="offset-md-4 col-md-8 informacion-vallado">
                                                    <ul>
                                                     <li>
-                                                        <p>-</p>
+                                                        <p>{{ $data['color'] == '#f3f3f3' ? '-' : '+20%'}}</p>
                                                         <p>Color del vallado: {{ $data['color'] }}</p>
                                                     </li>
                                                     <li>
