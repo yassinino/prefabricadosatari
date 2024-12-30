@@ -191,15 +191,6 @@
                                             </div>
                                         @break
 
-                                        <!-- @case(5)
-                                            <h3 class="text-center">Número de postes arranque-final</h3>
-                                            <div class="offset-md-4 col-md-4 mb-3">
-                                                    <span>Mi cercado tiene</span>  
-                                                    <input type="number" class="form-control" placeholder="Pon aquí el número de postes" value="" wire:model="data.arranque">
-                                                    <span>postes arranque-final</span>
-                                            </div>
-                                        @break -->
-
                                         @case(5)
                                             <h3 class="text-center">Selecciona cómo irán fijados los postes</h3>
                                             <div class="grid-wrapper grid-col-auto">
