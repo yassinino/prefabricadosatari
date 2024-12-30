@@ -322,15 +322,61 @@
                                                         <p>Color del vallado: {{ $data['color'] }}</p>
                                                     </li>
                                                     <li>
-                                                        <p>{{ $data['metros'] / 2 }}</p>
-                                                        <p>{{ $data['tipo'] }}</p>
+                                                        @php
+
+                                                        $metro = 1;
+
+                                                        @endphp
+
+
+                                                        @switch($data['altura'])
+                                                            @case("0.5 metros")
+                                                                @php
+
+                                                                $metro = 1;
+
+                                                                @endphp
+                                                                @break
+
+                                                            @case("1.0 metros")
+                                                            @php
+
+                                                            $metro = 2;
+
+                                                            @endphp
+
+                                                                @break
+
+                                                            @case("1.5 metros")
+                                                                @php
+
+                                                                $metro = 3;
+
+                                                                @endphp
+
+                                                                @break
+                                                            @case("2.0 metros")
+                                                            @php
+
+                                                            $metro = 4;
+
+                                                            @endphp
+                                                                @break
+
+                                                            @default
+                                                                <span></span>
+                                                        @endswitch
+
+
+                                                        <p>{{ ($data['metros'] / 2) * $metro  }}</p>
+                                                        <p>{{ $data['tipo'] }} Paneles</p>
                                                     </li>
                                                     <li>
                                                         <p>
-                                                            {{ $data['metros'] / 2 }}
+                                                            {{ ($data['metros'] / 2) - ($data['peatonal'] +  $data['puertas_veh_4']) }}
                                                         </p>
                                                         <p>
-                                                            postes de 2m de altura
+                                                            Postes de 2m de altura
                                                         </p>
                                                     </li>
 
@@ -339,7 +385,7 @@
                                                         {{ $data['peatonal'] * 2 }}
                                                         </p>
                                                         <p>
-                                                            postes arranque o final
+                                                            Postes arranque o final
                                                         </p>
                                                     </li>
 
