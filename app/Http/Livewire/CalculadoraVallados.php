@@ -27,6 +27,12 @@ class CalculadoraVallados extends Component
 
     public function mount()
     {
+
+        Session::forget('calculadora_step');
+        Session::forget('calculadora_data');
+        $this->current_step = 0;
+        $this->data = [];
+        
         $this->current_step = Session::get('calculadora_step');
         $this->data = Session::has('calculadora_data') ? Session::get('calculadora_data') : [];
 
