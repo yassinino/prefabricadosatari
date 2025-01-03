@@ -67,9 +67,9 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="/promo">Promo</a>
-                                </li>
+                                </li> -->
 
                                 <li>
                                     <a href="/puertas">Puertas</a>

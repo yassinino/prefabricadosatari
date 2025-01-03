@@ -2,10 +2,10 @@
             <div class="section-full p-t40 p-b50">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="wt-box col-xl-12 col-lg-12 col-md-12 m-b30 p-t40 mt-40">
+                        <!-- <div class="wt-box col-xl-12 col-lg-12 col-md-12 m-b30 p-t40 mt-40">
                                 <h4 style="font-size : 30px; text-align:center;line-height: 2em; ">DURANTE 2024 HASTA 2025 TODOS NUESTROS PRODUCTOS TENEN 10%.</h4>
                         </div>
- 
+  -->
                     </div>
 
                     <div class="row">
