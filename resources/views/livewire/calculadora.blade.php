@@ -364,8 +364,8 @@
                                                     </li>
                                                     <li>
                                                         @php
-                                                            $ar_fi = $data['peatonal'] * 2;
-                                                            $ar_pila = $data['puertas_veh_4'] * 2;
+                                                            $ar_fi = isset($data['peatonal']) ? $data['peatonal'] * 2 : 0;
+                                                            $ar_pila = isset($data['puertas_veh_4']) ? $data['puertas_veh_4'] * 2 : 0;
                                                         @endphp
                                                         <p>
                                                             {{ ($data['metros'] / 2) - ($ar_fi +  $ar_pila + $data['esquinas']) }}
@@ -377,7 +377,7 @@
 
                                                     <li>
                                                         <p>
-                                                        {{ $data['peatonal'] * 2 }}
+                                                        {{  isset($data['peatonal']) ? $data['peatonal'] * 2 : 0}}
                                                         </p>
                                                         <p>
                                                             Postes arranque o final puerta peatonal
@@ -386,7 +386,7 @@
 
                                                     <li>
                                                         <p>
-                                                        {{ $data['esquinas'] }}
+                                                        {{ isset($data['esquinas']) ? $data['esquinas'] : 0 }}
                                                         </p>
                                                         <p>
                                                             Postes esquina
@@ -395,7 +395,7 @@
 
                                                     <li>
                                                         <p>
-                                                        {{ $data['puertas_veh_4'] * 2 }}
+                                                        {{ isset($data['puertas_veh_4']) ? $data['puertas_veh_4'] * 2  : 0}}
                                                         </p>
                                                         <p>
                                                             Pilares arranque final puertas
