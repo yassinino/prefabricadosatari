@@ -62,7 +62,59 @@
             <th>-----------</th>
         </tr>
 
+
+        @php
+
+        $metro = 1;
+
+        @endphp
+
+
+        @switch($data['altura'])
+            @case("0.5m")
+                @php
+
+                $metro = 1;
+
+                @endphp
+                @break
+
+            @case("1.0m")
+            @php
+
+            $metro = 2;
+
+            @endphp
+
+                @break
+
+            @case("1.5m")
+                @php
+
+                $metro = 3;
+
+                @endphp
+
+                @break
+            @case("2.0m")
+            @php
+
+            $metro = 4;
+
+            @endphp
+                @break
+
+            @default
+         <span></span>
+        @endswitch
+        
         <tr>
+            <th>Unidades de Paneles :</th>
+            <td>{{ ($data['metros'] / 2) * $metro  }}</td>
+        </tr>
+
+        <tr>
+            
             <th><b>Postes de {{$data['altura']}} de altura :</b></th>
 
             @php
