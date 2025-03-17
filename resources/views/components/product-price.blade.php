@@ -34,7 +34,7 @@
 
 
     ?>
-    {{ $prod->collections[0]->translateAttribute('name') == 'Decoration jardin' ? 'Precio unidad' : 'Desde' }} 
+    {{-- {{ $prod->collections[0]->translateAttribute('name') == 'Decoration jardin' ? 'Precio unidad' : 'Desde' }} 
     
     @if(isset($dic_col))
 
@@ -44,6 +44,6 @@
 
     {{ $price }}
 
-    @endif
+    @endif --}}
 
 </span>
