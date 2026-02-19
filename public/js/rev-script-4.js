@@ -13,6 +13,7 @@
                 sliderLayout: "fullwidth",
                 dottedOverlay: "none",
                 delay: 9000,
+                startWithSlide: 0,
                 navigation: {
                     keyboardNavigation: "off",
                     keyboard_direction: "horizontal",
@@ -81,6 +82,72 @@
                     nextSlideOnWindowFocus: "off",
                     disableFocusListener: false,
                 }
+            });
+
+            var forceSliderAudioOn = function() {
+                var $videoLayers = tpj("#rev_slider_1014_1 .rs-background-video-layer");
+                if (!$videoLayers.length) {
+                    return;
+                }
+
+                $videoLayers.attr("data-volume", "100").data("volume", "100");
+
+                var $videos = $videoLayers.find("video");
+                if (!$videos.length) {
+                    return;
+                }
+
+                $videos.each(function() {
+                    try {
+                        this.muted = false;
+                        this.volume = 1;
+                        var playPromise = this.play();
+                        if (playPromise && playPromise.catch) {
+                            playPromise.catch(function() {});
+                        }
+                    } catch (e) {}
+                });
+
+            };
+
+            var fitSliderVideo = function() {
+                var $videos = tpj("#rev_slider_1014_1 .active-revslide .rs-background-video-layer video");
+                if (!$videos.length) {
+                    return;
+                }
+
+                $videos.css({
+                    width: "100%",
+                    height: "100%",
+                    top: "0",
+                    left: "0",
+                    position: "absolute",
+                    objectFit: "contain",
+                    backgroundColor: "#000"
+                });
+            };
+
+            // Try to keep audio ON by default whenever the video starts.
+            forceSliderAudioOn();
+            fitSliderVideo();
+            tpj("#rev_slider_1014_1").on("revolution.slide.onvideoplay", function() {
+                forceSliderAudioOn();
+                setTimeout(fitSliderVideo, 80);
+            });
+            tpj("#rev_slider_1014_1").on("revolution.slide.onchange", function() {
+                setTimeout(forceSliderAudioOn, 120);
+                setTimeout(fitSliderVideo, 120);
+            });
+
+            // Fallback for browsers that require user interaction before unmute.
+            tpj(document).on("click.sliderAudioUnlock touchstart.sliderAudioUnlock", function() {
+                forceSliderAudioOn();
+                fitSliderVideo();
+                tpj(document).off("click.sliderAudioUnlock touchstart.sliderAudioUnlock");
+            });
+
+            tpj(window).on("resize.sliderVideoFit", function() {
+                setTimeout(fitSliderVideo, 120);
             });
         }
     }); /*ready*/
