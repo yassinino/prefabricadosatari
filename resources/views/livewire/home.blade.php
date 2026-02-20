@@ -19,7 +19,7 @@
                                         <div class="wt-icon-box-wraper left p-l10">
                                             <div class="icon-content">
                                                 <h5 class="wt-tilte text-uppercase m-b0">Nuestra dirección:</h5> <br>
-                                                <p>Cami dels Catalans N:4, <br> 43330 Riudoms, Tarragona 
+                                                <p>Tel : +34 661 015 962
                                                 <br>Email: contact@prefabricadosatari.com
                                                 </p>
                                                 
